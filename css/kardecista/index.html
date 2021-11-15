@@ -56,6 +56,24 @@
         {
             background-color: red;
         }
+        .column
+        {
+            flex-direction: column; /*column - eixo padrão cima para baixo*/
+            float: left; /*flutuação para esquerda*/
+        }
+        .column li
+        {
+            background-color: orange;
+        }
+        .column-reverse
+        {
+            flex-direction: column;/*invertendo os itens da coluna*/
+            float: right; /*flutuando para a direita*/
+        }
+        .column-reverse li
+        {
+            background-color: blueviolet;
+        }
     </style>
 </body>
     <div class="flex">
@@ -75,6 +93,21 @@
     <!--row-reverse - sentido direita para a esquerda (sentido oposto).-->
     <ul class="flexContainer row-reverse"><!--visualiza sem classe flexContainer. Em seguida, utiliza a classe flexContainer-->
         <li class="flexItem">1</li>
+        <li class="flexItem">2</li>
+        <li class="flexItem">3</li>
+        <li class="flexItem">4</li>
+        <li class="flexItem">5</li>
+    </ul>
+    <!--Eixo em coluna-->
+    <ul class="flexContainer column"><!--visualiza sem classe flexContainer. Em seguida, utiliza a classe flexContainer-->
+        <li class="flexItem">1</li><!--Eixo em coluna com a cor laranja-->
+        <li class="flexItem">2</li>
+        <li class="flexItem">3</li>
+        <li class="flexItem">4</li>
+        <li class="flexItem">5</li>
+    </ul>
+    <ul class="flexContainer column-reverse"><!--Eixo inverso flutuando para a direita-->
+        <li class="flexItem">1</li><!--Eixo em coluna com a cor rosa-->
         <li class="flexItem">2</li>
         <li class="flexItem">3</li>
         <li class="flexItem">4</li>
