@@ -32,6 +32,30 @@
             display: flex; /*fica com varios pontos*/
             list-style: none; /*retirando os pontos - marcação*/
         }
+        .flexItem
+        {
+            background: blue; /*Cor de fundo*/
+            height: 50px; /*altura*/
+            width: 50px; /*largura*/
+            line-height: 50px; 
+            font-size: 20px; /*tamanho da fonte*/
+            color: white; /*cor da fonte*/  
+            text-align: center; /*texto centralizado*/
+            margin: 5px;
+            
+        }
+        .row
+        {
+            flex-direction: row;/*sentido padrão, da esquerda para a direita.*/
+        }
+        .row-reverse
+        {
+            flex-direction: row-reverse;/*sentido da direita para esquerda - inverso*/
+        }
+        .row-reverse li
+        {
+            background-color: red;
+        }
     </style>
 </body>
     <div class="flex">
@@ -40,12 +64,20 @@
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
     </div>
-
-    <ul class="flexContainer"><!--visualiza sem classe flexContainer. Em seguida, utiliza a classe flexContainer-->
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+    <!--row - eixo padrão é em linha, sentido da esquerda para a direita.-->
+    <ul class="flexContainer row"><!--visualiza sem classe flexContainer. Em seguida, utiliza a classe flexContainer-->
+        <li class="flexItem">1</li>
+        <li class="flexItem">2</li>
+        <li class="flexItem">3</li>
+        <li class="flexItem">4</li>
+        <li class="flexItem">5</li>
+    </ul>
+    <!--row-reverse - sentido direita para a esquerda (sentido oposto).-->
+    <ul class="flexContainer row-reverse"><!--visualiza sem classe flexContainer. Em seguida, utiliza a classe flexContainer-->
+        <li class="flexItem">1</li>
+        <li class="flexItem">2</li>
+        <li class="flexItem">3</li>
+        <li class="flexItem">4</li>
+        <li class="flexItem">5</li>
     </ul>
 </html>
