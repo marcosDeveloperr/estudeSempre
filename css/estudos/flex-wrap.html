@@ -7,6 +7,89 @@
     <title>flex-wrap</title>
 </head>
 <body>
-    
+    <style>
+        .flex-container
+        {
+            display: flex; /*inicializando o container*/
+            /*height: 150px; /*retirando a altura, utilizando a classe .wrap nao vai vazar do container*/
+            border: 2px solid black;
+            max-width: 300px;
+            /*flex-direction: column; /*eixo coluna*/
+        }
+        .item
+        {
+            font-size: 24px; /*tamanho da fonte*/
+            height: 50%; /*cada item tem o tamanho 50% do container */
+            text-align: center; /*texto centralizado*/
+            width:100px; /*min-width = 100px , vai vazar passando da dimensão do container.*/
+            line-height: 50px;
+        }
+        .nowrap
+        {
+            flex-wrap: nowrap;
+        }
+        .wrap 
+        {
+            flex-wrap: wrap;
+        }
+        .wrap-reverse
+        {
+            flex-wrap: wrap-reverse; /*itens que passa da largura do container passa para a linha acima*/
+        }
+        .blue
+        {
+            background-color: blue;
+        }
+        .green
+        {
+            background-color: green;
+        }
+        .orange
+        {
+            background-color: orange;
+        }
+    </style>
+    <h1>No Wrap</h1>
+    <div class="flex-container">
+        <div class="item orange">10</div>
+        <div class="item green">20</div>
+        <div class="item blue">30</div>        
+     </div>
+
+     <h1>No Wrap</h1>
+     <!--Não ocorre a quebra de linha.-->
+     <div class="flex-container nowrap">
+        <div class="item orange">10</div>
+        <div class="item green">20</div>
+        <div class="item blue">30</div> 
+        <div class="item orange">10</div>
+        <div class="item green">20</div>
+        <div class="item blue">30</div>  
+        <div class="item orange">10</div>
+        <div class="item green">20</div>
+        <div class="item blue">30</div>
+        <div class="item blue">30</div>  
+        <div class="item orange">10</div>
+        <div class="item green">20</div>
+        <div class="item blue">30</div>        
+     </div>
+    <h1>Wrap</h1>
+     <!--Ocorre a quebra a linha, os itens que excede o tamanho do container estão na linha de baixo!-->
+     <div class="flex-container wrap">
+        <div class="item orange">10</div>
+        <div class="item green">20</div>
+        <div class="item blue">30</div> 
+        <div class="item orange">10</div>
+        <div class="item green">20</div>
+        <div class="item blue">30</div>        
+     </div>
+
+     <h1>Wrap-Reverse</h1>
+     <div class="flex-container wrap-reverse">
+        <div class="item orange">10</div>
+        <div class="item green">20</div>
+        <div class="item blue">30</div> 
+        <div class="item orange">10</div>               
+     </div>
 </body>
 </html>
