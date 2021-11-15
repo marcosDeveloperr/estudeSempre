@@ -74,6 +74,34 @@
         {
             background-color: blueviolet;
         }
+        .flex-container
+        {
+            display: flex;
+            height: 150px;
+        }
+        .itemm
+        {
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            width: 100px;
+            line-height: 50px;
+        }
+        .nowrap
+        {
+            flex-wrap: nowrap;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .green
+        {
+            background-color: green;
+        }
+        .orange
+        {
+            background-color: orange;
+        }
     </style>
 </body>
     <div class="flex">
@@ -113,4 +141,10 @@
         <li class="flexItem">4</li>
         <li class="flexItem">5</li>
     </ul>
+    <h1>No wrap</h1>
+    <div class="flex-container">
+        <div class="flex-container itemm">10</div>
+        <div class="flex-container itemm">20</div>
+        <div class="flex-container itemm">30</div>        
+    </div>
 </html>
