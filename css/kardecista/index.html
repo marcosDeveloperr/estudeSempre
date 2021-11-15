@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kardecista</title>
+</head>
+
+<body>
+    <style>
+        .flex {
+            max-width: 300px;
+            padding: 10px;
+            /*espaçamento interno em todas direções*/
+            border: 2px solid black;
+            /*borda preta com expressura de 2px*/
+            display: flex;
+            /*inicializando o container, agrupa elementos filhos respeitando o tamanho proporcional do container*/
+
+        }
+
+        .item {
+            background-color: aqua;
+            margin: 5px;
+        }
+        .flexContainer
+        {
+            margin: 0;
+            padding: 0;
+            display: flex; /*fica com varios pontos*/
+            list-style: none; /*retirando os pontos - marcação*/
+        }
+    </style>
+</body>
+    <div class="flex">
+        <!--adicionando a propriedade display: flex em css, declarando a classe flex -->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <ul class="flexContainer"><!--visualiza sem classe flexContainer. Em seguida, utiliza a classe flexContainer-->
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</html>
