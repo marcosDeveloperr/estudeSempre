@@ -40,6 +40,20 @@
         {
             align-items: baseline;
         }
+        .column
+        {
+            flex-direction: column;
+        }
+        .central
+        {
+            height: 300px;
+            justify-content: center;
+        }
+        .central .item
+        {
+            padding: 20px;
+            flex: 0; /*tirando algumas propriedades */
+        }
     </style>
 </head>
 <body>
@@ -74,6 +88,28 @@
         <div class="item">Item 3</div>
     </div>
 
-   
+    <h1>Comportamento com eixo coluna</h1>
+    <p>Flex-star</p>
+    <div class="container start column">
+        <div class="item">1tem 1</div>
+        <div class="item">Amo estudar! Adoro passar o tempo codificando, entender a construção do projeto.</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Flex-end</p>
+    <div class="container end column">
+        <div class="item">1tem 1</div>
+        <div class="item">Amo estudar! Adoro passar o tempo codificando, entender a construção do projeto.</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Center</p>
+    <div class="container center column">
+        <div class="item">1tem 1</div>
+        <div class="item">Amo estudar! Adoro passar o tempo codificando, entender a construção do projeto.</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container central center">
+        <div class="item">Esse texto vai ficar no meio ou centro da div, tanto na altura como largura.</div>
+    </div>
+    
 </body>
 </html>
