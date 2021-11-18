@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignItens</title>
+    <style>
+        .container
+        {
+            max-width: 350px;
+            border: 2px solid black;
+            display: flex;
+        }
+        .item
+        {
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            flex: 1; /*vai crescer conforme os elementos.*/
+        }
+        .center
+        {
+            align-items: center; /*alinhamento dos itens ao centro - espaçamentos iguais*/
+        }
+        .stretch
+        {
+            align-items: stretch; /*crescimento dos outros itens referente ao maior item.*/
+        }
+        .start
+        {
+            align-items: flex-start; /*ao topo do container*/
+        }
+        .end
+        {
+            align-items: flex-end; /*final do container*/
+        }
+        .baseline
+        {
+            align-items: baseline;
+        }
+    </style>
+</head>
+<body>
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">1tem 1</div>
+        <div class="item">Amo estudar! Adoro passar o tempo codificando, entender a construção do projeto.</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">1tem 1</div>
+        <div class="item">Amo estudar! Adoro passar o tempo codificando, entender a construção do projeto.</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Flex-star</p>
+    <div class="container start">
+        <div class="item">1tem 1</div>
+        <div class="item">Amo estudar! Adoro passar o tempo codificando, entender a construção do projeto.</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Flex-end</p>
+    <div class="container end">
+        <div class="item">1tem 1</div>
+        <div class="item">Amo estudar! Adoro passar o tempo codificando, entender a construção do projeto.</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>baseline</p>
+    <div class="container baseline">
+        <div class="item"><br>1tem 1</div><!--quebra de linha, porque os outros elementos tem com linha de base-->
+        <div class="item">Amo estudar! Adoro passar o tempo codificando, entender a construção do projeto.</div>
+        <div class="item">Item 3</div>
+    </div>
+
+   
+</body>
+</html>
