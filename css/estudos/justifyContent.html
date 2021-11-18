@@ -41,6 +41,11 @@
         {
             justify-content: space-around;
         }
+        .column
+        {
+            flex-direction: column;
+            min-height: 200px; /*utilizando junto flex-end, flex-start e flex-center tem espaçamento na altura 200px*/
+        }
     </style>
 </head>
 <body>
@@ -88,6 +93,33 @@
         <div class="item">outro item</div><!--o primeiro e último elemento tem o mesmo espaçamentos-->
         <item>4</item>                    <!--o elemento do meio tem espaçamento 2 vezez maior referente ao primeiro e último elemento.-->
         <item>5</item>
+    </div>
+
+    <h1>flex-start column</h1>
+    <div class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div><!--o primeiro e último elemento tem o mesmo espaçamentos-->
+       <div class="item">4</div>
+       <div class="item">5</div>
+    </div>
+
+    <h1>flex-end column</h1>
+    <div class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+       <div class="item">4</div>
+       <div class="item">5</div>
+    </div>
+
+    <h1>flex-center column</h1>
+    <div class="container flex-center column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+       <div class="item">4</div>
+       <div class="item">5</div>
     </div>
 </body>
 </html>
