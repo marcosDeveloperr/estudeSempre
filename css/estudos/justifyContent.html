@@ -12,6 +12,7 @@
             max-width: 400px;
             margin: 0;
             display: flex;
+            margin-bottom: 10px;
         }
         .item
         {
@@ -20,13 +21,73 @@
             text-align: center;
             margin: 5px;
         }
+        .flex-start
+        {
+            justify-content: flex-start; /*Elementos no inicio do container*/
+        }
+        .flex-end
+        {
+            justify-content: flex-end; /*Elementos no final do container*/
+        }
+        .flex-center
+        {
+            justify-content: center;
+        }
+        .space-between
+        {
+            justify-content: space-between; /*Espaçamentos iguais entre eles.*/
+        }
+        .space-around
+        {
+            justify-content: space-around;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <!--Por padrão, os elementos estão no início do container.-->
+    <h1>flex-star</h1>
+    <div class="container flex-start">
         <div class="item">1</div>
         <div class="item">item 2</div>
         <div class="item">outro item</div>
+    </div>
+
+     <!--Os elementos estão no final do container.-->     
+    <h1>flex-end</h1>
+    <div class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </div>
+
+    <!--Os elementos estão no centro do container.-->     
+    <h1>center</h1>
+    <div class="container flex-center">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <item>4</item>
+        <item>5</item>
+    </div>
+
+    <!--Os elementos estão com espaços iguais entre eles.-->     
+    <h1>center</h1>
+    <div class="container space-between">
+        <div class="item">1</div><!--vai para o inicio-->
+        <div class="item">item 2</div><!--outros elementos com espaçamentos iguais entre eles..-->
+        <div class="item">outro item</div>
+        <item>4</item>
+        <item>5</item><!--vai para o final-->
+    </div>
+
+       
+    <h1>space-around</h1>
+    <div class="container space-around">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div><!--o primeiro e último elemento tem o mesmo espaçamentos-->
+        <item>4</item>                    <!--o elemento do meio tem espaçamento 2 vezez maior referente ao primeiro e último elemento.-->
+        <item>5</item>
     </div>
 </body>
 </html>
