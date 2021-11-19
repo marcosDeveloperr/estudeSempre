@@ -76,3 +76,8 @@ header .menu
     margin-top: 10px;
     margin-bottom: 10px;
 }
+#quem-somos
+{
+    /*inverte a ordem dos elementos*/
+    flex-direction: row-reverse;
+} 
