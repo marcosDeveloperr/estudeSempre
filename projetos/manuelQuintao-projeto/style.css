@@ -81,3 +81,27 @@ header .menu
     /*inverte a ordem dos elementos*/
     flex-direction: row-reverse;
 } 
+#quem-somos h2
+{
+    font-size: 32px;
+    color:  #122A57;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+/*Elemento marcacao do titulo*/
+#quem-somos h2::before
+{
+    content: "";/*vazio*/
+    height: 50px;/*altura*/
+    width: 5px;
+    margin-right: 5px;
+    background-color:  #122A57;
+    position: relative;
+
+}
+#quem-somos p
+{
+    margin-bottom: 10px;
+    width: 90%;
+}
