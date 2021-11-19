@@ -12,6 +12,11 @@ ul
 ul li a{
     text-decoration: none;
 }
+div img
+{
+    display: block;
+    width: 100%;
+}
 .flex-container
 {
     display: flex;
@@ -80,6 +85,8 @@ header .menu
 {
     /*inverte a ordem dos elementos*/
     flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
 } 
 #quem-somos h2
 {
