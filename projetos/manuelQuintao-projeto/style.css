@@ -17,8 +17,30 @@ ul li a{
     display: flex;
     max-width: 992px;
     margin: auto;
+    width: 100%;
 
 }
 header{
     background-color: #122A57;
+    height: 100px; /*aumentando a altura*/
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+/*menu ficar a direita*/
+header .list-items
+{
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+}
+/*menu ficar a direita*/
+header .menu
+{
+    justify-content: space-between;
+}
+.list-items li a
+{
+    color: white;
 }
