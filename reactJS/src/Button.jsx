@@ -1,10 +1,12 @@
 import React from "react";//preciso dele em todos os arquivos.
 
-function Button()
+function Button(props)
 {
+    const {name, onClick} = props
+    
     //agora temos jsx
     return(
-        <button>{}</button>
+        <button onClick={onClick}>{name}</button>
     )
 }
 
