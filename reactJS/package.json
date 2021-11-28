@@ -1,7 +1,7 @@
 {
   "name": "reactjs",
-  "version": "1.0.0", 
-  "keywords": [],  
+  "version": "1.0.0",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "react": "^16.8.6",
@@ -9,22 +9,23 @@
     "react-scripts": "^3.0.1"
   },
   "devDependencies": {
-    "typescript": "3.3.3"
+    "typescript": "3.3.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^4.9.1"
   },
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist":{
-    "procution":[
+  "browserslist": {
+    "procution": [
       ">0,2%",
       "not dead",
       "not op_mini all"
     ],
-    "development":[
+    "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
@@ -33,5 +34,4 @@
   "description": "",
   "author": "",
   "license": "ISC"
-  
 }
