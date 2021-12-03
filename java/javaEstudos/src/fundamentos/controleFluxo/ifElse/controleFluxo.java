@@ -48,6 +48,7 @@ public class controleFluxo
         ifSemFlecha();
         ifFerias();
         ifMenor();
+        ifAuxilio();
     }
 
 
@@ -225,5 +226,32 @@ public class controleFluxo
         {
             System.out.println("Funcionário precisa urgente do auxilio salarial.");
         }
+    }
+
+    private static void ifAuxilio()
+    {
+        double salarioMensal = 2000.00d;
+        double medSalarial = 4500.50d;
+        int qtdDep = 5;
+        int medDep = 2;
+       
+
+        boolean salBaixo = salarioMensal < medSalarial;
+        boolean altaQtdDep = qtdDep >= medDep;
+
+        if(salBaixo && altaQtdDep)
+        {
+            System.out.println("Funcionario com direito ao auxilio salarial.");
+        }
+        //ou
+        // boolean recebeAuxilio = salBaixo && altaQtdDep;
+        // if(recebeAuxilio)
+        // {
+        //     System.out.println("obá, funcionario recebe auxilio");
+        // }
+        // else
+        // {
+        //     System.out.println("Eita, funcionario nao recebe auxilio");
+        // }
     }
 }
