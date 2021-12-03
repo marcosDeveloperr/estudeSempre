@@ -44,8 +44,9 @@ public class controleFluxo
 {
     public static void main(String[] args) 
     {
-        //ifFlecha();
-        //ifSemFlecha();
+        ifFlecha();
+        ifSemFlecha();
+        ifFerias();
     }
 
 
@@ -201,6 +202,16 @@ public class controleFluxo
         }
     }
 
+    private static void ifFerias()
+    {
+        String mesFerias = "Março";
+
+        //não fica legal fazer com if, melhor seria com switch
+        if(mesFerias == "Março" || mesFerias == "Abril" || mesFerias == "Maio")
+        {
+            System.out.println("Fériassss....partiu.");
+        }
+    }
 
 
 }
