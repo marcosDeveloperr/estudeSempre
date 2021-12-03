@@ -47,6 +47,7 @@ public class controleFluxo
         ifFlecha();
         ifSemFlecha();
         ifFerias();
+        ifMenor();
     }
 
 
@@ -213,5 +214,16 @@ public class controleFluxo
         }
     }
 
+    private static void ifMenor()
+    {
+        double salMensal = 12000.00d;
+        double medSal = 11500.00d;
+        int qtdDep = 4;
+        int mediaDep = 2;
 
+        if((salMensal<medSal) && (qtdDep>=mediaDep))
+        {
+            System.out.println("Funcionário precisa urgente do auxilio salarial.");
+        }
+    }
 }
