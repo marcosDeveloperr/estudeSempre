@@ -45,7 +45,7 @@ public class controleFluxo
     public static void main(String[] args) 
     {
         //ifFlecha();
-        
+        //ifSemFlecha();
     }
 
 
@@ -143,6 +143,63 @@ public class controleFluxo
         }
     }    
 
+    private static void ifSemFlecha()
+    {
+        int mesEscolhido = 3;
+
+        if(mesEscolhido == 1)
+        {
+            System.out.println("JANEIRO");
+        }
+        else if(mesEscolhido == 2)
+        {
+            System.out.println("FEVEREIRO");
+        }
+        else if(mesEscolhido == 3)
+        {
+            System.out.println("MARÇO");
+        }
+        else if(mesEscolhido == 4)
+        {
+            System.out.println("ABRIL");
+        }
+        else if(mesEscolhido == 5)
+        {
+            System.out.println("MAIO");
+        }
+        else if(mesEscolhido == 6)
+        {
+            System.out.println("JUNHO");
+        }
+        else if(mesEscolhido == 7)
+        {
+            System.out.println("JULHO");
+        }
+        else if(mesEscolhido == 8)
+        {
+            System.out.println("AGOSTO");
+        }
+        else if(mesEscolhido == 9)
+        {
+            System.out.println("SETEMBRO");
+        }
+        else if(mesEscolhido == 10)
+        {
+            System.out.println("OUTUBRO");
+        }
+        else if(mesEscolhido == 11)
+        {
+            System.out.println("NOVEMBRO");
+        }
+        else if(mesEscolhido == 12)
+        {
+            System.out.println("DEZEMBRO");
+        }
+        else 
+        {
+            System.out.println("Numero escolhido fora do intervalo.");
+        }
+    }
 
 
 
