@@ -21,6 +21,8 @@ function test()
     //escopo de funcao
 }
 
+//escopo global
+console.log('\n escopo global');
 var teste = 'example';
 (()=>{
     console.log(`valor dentro da funcao "${teste}"`);
@@ -30,4 +32,17 @@ var teste = 'example';
         console.log(`valor dentro do if "${teste}"`);
     }
     console.log(`valor após a execução do if "${teste}`);
+})();
+
+console.log('\n escopo local');
+//escopo bloco
+(()=>{
+    let teste = "example";
+    console.log(`valor dentro da funcao "${teste}"`);
+    if(true)
+    {
+        let teste = "valor dentro if";
+        console.log(`valor dentro do if "${teste}"`);
+    }
+    console.log(`valor após a execução do if "${teste}"`)
 })();
