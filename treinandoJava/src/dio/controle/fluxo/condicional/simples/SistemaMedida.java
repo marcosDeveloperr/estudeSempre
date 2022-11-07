@@ -5,8 +5,8 @@ public class SistemaMedida {
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		String sigla = "K";
-		
+		String sigla = "P";
+		/*
 		if(sigla == "P")
 		{
 			System.out.println("Tamanho Pequeno");
@@ -22,6 +22,31 @@ public class SistemaMedida {
 		else
 		{
 			System.out.println("Tamanho Indefinido");
+		}*/
+		
+		//aplicando o switch case..
+		
+		switch(sigla)
+		{
+			case "P":
+				{
+					System.out.println("Pequeno");
+					break;
+				}
+			case "M":
+				{
+					System.out.println("Medio");
+					break;
+				}
+			case "G":
+				{
+					System.out.println("Grande");
+					break;
+				}
+			default:
+				{
+					System.out.println("Tamanho Indefinido");
+				}
 		}
 
 	}
