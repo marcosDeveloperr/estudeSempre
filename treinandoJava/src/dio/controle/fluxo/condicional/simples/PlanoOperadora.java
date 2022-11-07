@@ -6,9 +6,9 @@ public class PlanoOperadora
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		String plano = "M";
+		String plano = "B";
 		
-		if(plano == "B")
+		/*if(plano == "B")
 		{
 			System.out.println("100 minutos de ligação");
 		}
@@ -26,8 +26,29 @@ public class PlanoOperadora
 		else
 		{
 			System.out.println("Plano Indefinido");
+		}*/
+	
+		//Refatorando o código
+		switch(plano)
+		{
+			
+			case "I":
+			{
+				System.out.println("5Gb youtube");
+				//nao uso o break - colocando o maior plano para menor
+			}
+			case "M":
+			{
+				System.out.println("Whats e Instagram Grátis");
+			}
+			case "B":
+			{
+				System.out.println("100 minutos de ligação");
+				
+			}			
+			
 		}
-
+		
 	}
 
 }
