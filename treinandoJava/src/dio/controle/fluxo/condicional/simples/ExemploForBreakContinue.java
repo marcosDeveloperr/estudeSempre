@@ -14,6 +14,15 @@ public class ExemploForBreakContinue {
 			}
 			System.out.println("contando: " + i);
 		}
+		
+		for(int i = 0; i<5; i++)
+		{
+			if(i==3)
+			{
+				continue; //quanto for igual a 3, vai continuar porém não dar visualizaçã do numero 3
+			}
+			System.out.println("numeros:" + i);
+		}
 
 	}
 
