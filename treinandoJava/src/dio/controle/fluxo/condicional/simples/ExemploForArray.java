@@ -13,6 +13,13 @@ public class ExemploForArray {
 		{
 			System.out.println("array" + "[" + contador + "]" + " - " + alunos[contador]);
 		}
+		
+		//for mais elegante - for/each
+		//variavel: aluno
+		for(String aluno : alunos)
+		{
+			System.out.println("Nome do Aluno: " + aluno);
+		}
 	}
 
 }
