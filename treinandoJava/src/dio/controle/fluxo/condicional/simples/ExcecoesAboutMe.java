@@ -20,7 +20,8 @@ public class ExcecoesAboutMe
 		//criando o objeto scanner chamado entrada
 		 
 		 
-					
+		 try 
+		 {				
 			
 			Scanner entrada = new Scanner(System.in).useLocale(Locale.US);
 			
@@ -41,7 +42,12 @@ public class ExcecoesAboutMe
 			System.out.println("Nome: " + nome.toLowerCase() + " " + sobrenome.toLowerCase());
 			System.out.println("Idade: " + idade + " anos ");
 			System.out.println("Altura: " + altura + " cm ");
-		 
-		 
+		 }
+		 catch (InputMismatchException e) 
+		 {
+				System.out.println("Os campos idade e altura são numéricos");
+				System.out.println("utilizando pontos ao inves de virgulas entre");
+				System.out.println("as casas decimais.");
+		 }	
 	}
 }
