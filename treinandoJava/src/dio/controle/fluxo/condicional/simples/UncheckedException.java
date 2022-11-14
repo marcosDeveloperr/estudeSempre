@@ -11,11 +11,24 @@ public class UncheckedException
 		//realizar a divisão de dois números inteiros.
 		//Saida do resultado da divisão.
 		
-		String numerador = JOptionPane.showInputDialog("Numerador");
+		String numerador = JOptionPane.showInputDialog("Numerador");//colocando nome resulta uncheckedException
 		String denominador = JOptionPane.showInputDialog("Denominador");
 		
-		int resultado = dividir(Integer.parseInt(numerador),Integer.parseInt(denominador));
-		System.out.println("resultado da divisão: " + resultado);
+		try 
+		{
+			int resultado = dividir(Integer.parseInt(numerador),Integer.parseInt(denominador));
+			System.out.println("resultado da divisão: " + resultado);
+		} 
+		catch (NumberFormatException e) 
+		{
+			e.printStackTrace();//imprimir
+		}
+		finally 
+		{
+			System.out.println("chegou no finally");
+		}
+		System.out.println("o código continua...");
+		
 		
 	}
 	
