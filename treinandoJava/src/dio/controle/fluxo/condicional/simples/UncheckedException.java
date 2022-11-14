@@ -24,7 +24,11 @@ public class UncheckedException
 			//e.printStackTrace();//imprimir
 			//quando acontecer exception - NumberFormatException - digitou um texto no lugar inteiro
 			//informe uma mensagem pelo motivo do erro ( entrada que realizou o erro)
-			JOptionPane.showInternalMessageDialog(null, "Informe um numero inteiro: " + e.getMessage());
+			JOptionPane.showMessageDialog(null, "Informe um numero inteiro: " + e.getMessage());
+		}
+		catch (ArithmeticException e) 
+		{
+			JOptionPane.showMessageDialog(null, "Denominador não poder ser zero ( 0 )");
 		}
 		finally 
 		{
