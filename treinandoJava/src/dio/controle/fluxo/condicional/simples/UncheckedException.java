@@ -21,7 +21,10 @@ public class UncheckedException
 		} 
 		catch (NumberFormatException e) 
 		{
-			e.printStackTrace();//imprimir
+			//e.printStackTrace();//imprimir
+			//quando acontecer exception - NumberFormatException - digitou um texto no lugar inteiro
+			//informe uma mensagem pelo motivo do erro ( entrada que realizou o erro)
+			JOptionPane.showInternalMessageDialog(null, "Informe um numero inteiro: " + e.getMessage());
 		}
 		finally 
 		{
