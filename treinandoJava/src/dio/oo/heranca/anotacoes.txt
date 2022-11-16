@@ -1,0 +1,12 @@
+//herança
+//herança simples, as classes filhas tem só uma classe pai.
+
+//polimorfismo
+//mesmo método,ação, se comportando diferente.
+//Ex: Classe Pagamento - processar() , Classe Boleto - processar(), Classe Credito - processar(), Classe Debito - processar
+//Classe Pix - processar().
+
+//sobreEscrita
+//mesmo método,ação, PODENDO se comportar diferente.
+/Ex: "Classe Pai" - Classe Conta - double saldo, exibirSaldo(), "Classes Filhas" - Classe Corrente, Classe Universitaria //mesmo comportamento da classe pai.
+"Classe Filha" - Classe Poupanca - exibirSaldo(), "Classe Filha" - Classe Especial - exibirSaldo() //tem comportamento diferente que rende juros...

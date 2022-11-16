@@ -1,5 +1,6 @@
 package dio.oo.heranca;
 
-public class Moto {
+public class Moto extends Veiculo
+{
 
 }

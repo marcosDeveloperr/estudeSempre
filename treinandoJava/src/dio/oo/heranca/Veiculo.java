@@ -1,5 +1,9 @@
 package dio.oo.heranca;
 
-public class Veiculo {
+//aplicando herança - classe pai
+//herança simples, as classes filhas tem só uma classe pai.
+//realizar upcasts e downcasts
+public class Veiculo 
+{
 
 }

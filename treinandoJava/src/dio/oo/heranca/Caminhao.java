@@ -1,5 +1,6 @@
 package dio.oo.heranca;
 
-public class Caminhao {
+public class Caminhao extends Veiculo
+{
 
 }
