@@ -1,6 +1,6 @@
 package dio.oo.heranca;
 
-public class Gerente 
+public class Gerente extends Funcionario
 {
 
 }
