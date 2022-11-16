@@ -13,7 +13,7 @@ public class RodarAplicacao
 		
 		//criando objetos - carro
 		Carro carro1 = new Carro(); 
-		Carro carro2 = new Carro();
+		Carro carro2 = new Carro("cinza","Mercedes-Benz Class C",66);
 		
 		carro1.setCor("Azul");
 		carro1.setModelo("BMW Serie 3");
@@ -23,7 +23,14 @@ public class RodarAplicacao
 		System.out.println("carro 1 - Cor: " + carro1.getCor());
 		System.out.println("carro 1 - Modelo: " + carro1.getModelo());
 		System.out.println("carro 1 - Capacidade do Tanque: " + carro1.getCapacidadeTanque());
-		System.out.println("carro 1 - Total valor encher o tanque: " + carro1.totalValorTanque(5.00));
+		System.out.println("carro 1 - Total valor para encher o tanque: " + carro1.totalValorTanque(5.00) + "\n");
+		
+		System.out.println("Carro 2 - Cor: " + carro2.getCor());
+		System.out.println("Carro 2 - Modelo: " + carro2.getModelo());
+		System.out.println("Carro 2 - Capacidade do Tanque: " + carro2.getCapacidadeTanque());
+		System.out.println("Carro 2 - Total valor para encher o tanque: " + carro2.totalValorTanque(5.46));
+		
+	
 	}
 
 }
