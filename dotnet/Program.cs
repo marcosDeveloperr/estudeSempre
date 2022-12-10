@@ -3,15 +3,42 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using dotnet.Models;
-//Operador de Atribuição
-int a = 10;
-int b = 20;
-int c = a + b;
-Console.WriteLine("A soma: " + c);
 
-c = c + 5; //colocando mais 5 no valor de c 
+// Ordem dos Operadores
+// parênteses, expoentes, divisao, multiplicao, adição e subtração.
+// double a = 4/2 + 2;  //divisão e depois a soma
+// double b = 4/(2+2);  //primeira ordem é os parênteses 
+// Console.WriteLine(a);
+// Console.WriteLine(b);
+
+// int inteiro = 10;
+// string texto = inteiro.ToString();  //não precisando usar o Convert.ToString()
+// Console.WriteLine(texto);
+
+//***** cast implícito *****
+// int a = int.MaxValue; //valor máximo de um inteiro
+// long b = a; //mas como o valor maximo do long é mairo que o inteiro, entao cabe no long.
+// Console.WriteLine(b);
+
+//****** Converção de tipos ******
+// int a = Convert.ToInt32("10");
+// int c = Convert.ToInt32(null); //saída é o numero 0.  Preferivel usar o Convert dando o valor zero e continua a aplicacao...
+// int b = int.Parse("5");
+// Console.WriteLine("Convertendo string em inteiro: " + a);
+// Console.WriteLine("Convertendo string em inteiro: " + c);
+// Console.WriteLine("Convertendo string em inteiro: " + b);
+// int d = int.Parse(null); //saída é um erro
+// Console.WriteLine(d);
+
+//***** Operador de Atribuição *****
+// int a = 10;
+// int b = 20;
+// int c = a + b;
+// Console.WriteLine("A soma: " + c);
+
+// c = c + 5; //colocando mais 5 no valor de c 
 //c += 5; //também poderia ser assim, somando mais 5 no valor de c
-Console.WriteLine("Valor atual c :" + c);
+// Console.WriteLine("Valor atual c :" + c);
 
 
 // DateTime dataAtual = DateTime.Now; //pegando a data atual do sistema
