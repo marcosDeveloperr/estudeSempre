@@ -4,24 +4,68 @@
 
 using dotnet.Models;
 
-//switch case
-Console.WriteLine("Digite uma letra: ");
-string letra = Console.ReadLine();//vai pegar o que digitar no console como resposta da pergunta.
+//Operador NOT 
+// !
 
-//Melhorando com switc
-switch (letra)
+bool choveu = true;
+bool estarTarde = true;
+
+if(!choveu && !estarTarde)
 {
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-        Console.WriteLine("Vogal!");
-        break;
-    default:
-        Console.WriteLine("Não é uma vogal!");
-        break;
+    Console.WriteLine("vou pedalar");
 }
+else
+{
+    Console.WriteLine("vou deixar para mais tarde pedalar...");
+}
+
+//Operador AND &&
+
+// bool presencaMinima = true;
+// int mediaSuperior = 5;
+
+// if(presencaMinima && mediaSuperior >= 7)
+// {
+//     Console.WriteLine("aprovado");
+// }
+// else
+// {
+//     Console.WriteLine("reprovado");
+// }
+
+//Operador OR || 
+//pipe
+
+// bool maiorIdade = true;
+// bool autorizaçãoResponsavel = false;
+
+// if(maiorIdade || autorizaçãoResponsavel)
+// {
+//     Console.WriteLine("Entrada liberada");
+// }
+// else
+// {
+//     Console.WriteLine("Entrada não liberada");
+// }
+
+//switch case
+// Console.WriteLine("Digite uma letra: ");
+// string letra = Console.ReadLine();//vai pegar o que digitar no console como resposta da pergunta.
+
+// //Melhorando com switc
+// switch (letra)
+// {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         Console.WriteLine("Vogal!");
+//         break;
+//     default:
+//         Console.WriteLine("Não é uma vogal!");
+//         break;
+// }
 
 //Melhorando o código 
 // if(letra == "a" ||
