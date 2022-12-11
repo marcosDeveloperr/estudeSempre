@@ -33,19 +33,19 @@ namespace dotnet.Models
         {
             double radiano = angulo * Math.PI / 180; //primeiro a divisão de PI com 180
             double seno = Math.Sin(radiano); //recebendo o angulo em radiano
-            Console.WriteLine($"seno do {angulo}° = {seno}");
+            Console.WriteLine($"seno do {angulo}° = {Math.Round(seno,4)}");//arredondamento em 4 casas decimais após a vírgula
         }
         public void coseno(double angulo)
         {
             double radiano = angulo * Math.PI / 180;
             double coseno = Math.Cos(radiano);
-            Console.WriteLine($"coseno do {angulo}° = {coseno}");
+            Console.WriteLine($"coseno do {angulo}° = {Math.Round(coseno,4)}");
         }
         public void tangente(double angulo)
         {
             double radiano = angulo*Math.PI / 180;
             double tangente = Math.Tan(radiano);
-            Console.WriteLine($"tangente do {angulo}° = {tangente}");
+            Console.WriteLine($"tangente do {angulo}° = {Math.Round(tangente,4)}");
         }
     }
 }
