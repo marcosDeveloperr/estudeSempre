@@ -3,21 +3,28 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using dotnet.Models;
+//usando os métodos da classe Calculadora
+Calculadora cal= new Calculadora();
+cal.somar(20,10);
+cal.subtracao(20,10);
+cal.multiplicacao(20,10);
+cal.divisao(20,10);
+
 
 //Operador NOT 
 // !
 
-bool choveu = true;
-bool estarTarde = true;
+// bool choveu = true;
+// bool estarTarde = true;
 
-if(!choveu && !estarTarde)
-{
-    Console.WriteLine("vou pedalar");
-}
-else
-{
-    Console.WriteLine("vou deixar para mais tarde pedalar...");
-}
+// if(!choveu && !estarTarde)
+// {
+//     Console.WriteLine("vou pedalar");
+// }
+// else
+// {
+//     Console.WriteLine("vou deixar para mais tarde pedalar...");
+// }
 
 //Operador AND &&
 
