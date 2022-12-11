@@ -9,6 +9,7 @@ cal.somar(20,10);
 cal.subtracao(20,10);
 cal.multiplicacao(20,10);
 cal.divisao(20,10);
+cal.potenciacao(3,3);
 
 
 //Operador NOT 
