@@ -4,26 +4,88 @@
 
 using dotnet.Models;
 
-// Operador Condicional
-int estoque = 3;
-int compras = 0;
-bool possivelCompra = compras> 0 && estoque >= compras;
+//switch case
+Console.WriteLine("Digite uma letra: ");
+string letra = Console.ReadLine();//vai pegar o que digitar no console como resposta da pergunta.
 
-Console.WriteLine("estoque: " + estoque);
-Console.WriteLine($"compras:  {compras}");
-Console.WriteLine("Foi possível realizar a compra? " + possivelCompra);
-if(compras == 0)
+//Melhorando com switc
+switch (letra)
 {
-    Console.WriteLine("Compra inválida");
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("Vogal!");
+        break;
+    default:
+        Console.WriteLine("Não é uma vogal!");
+        break;
 }
-else if(possivelCompra)
-{
-    Console.WriteLine("Compra realizada com sucesso!");
-}
-else
-{
-    Console.WriteLine("Não foi possivel realizar a compra");
-}
+
+//Melhorando o código 
+// if(letra == "a" ||
+//    letra == "e" ||
+//    letra == "i" ||
+//    letra == "o" ||
+//    letra == "u")
+// {
+//     Console.WriteLine("vogal!");
+// }
+// else
+// {
+//     Console.WriteLine("Não é vogal!");
+// }
+
+
+
+// if(letra == "a")
+// {
+//     Console.WriteLine("vogal!");
+// }
+// else if(letra == "e")
+// {
+//     Console.WriteLine("vogal!");
+// }
+// else if(letra == "i")
+// {
+//     Console.WriteLine("vogal!");
+// }
+// else if(letra == "o")
+// {
+//     Console.WriteLine("vogal!");
+// }
+// else if(letra == "u")
+// {
+//     Console.WriteLine("vogal!");
+// }
+// else
+// {
+//     Console.WriteLine("Não é vogal!");
+// }
+
+
+
+// // Operador Condicional
+// int estoque = 3;
+// int compras = 0;
+// bool possivelCompra = compras> 0 && estoque >= compras;
+
+// Console.WriteLine("estoque: " + estoque);
+// Console.WriteLine($"compras:  {compras}");
+// Console.WriteLine("Foi possível realizar a compra? " + possivelCompra);
+// if(compras == 0)
+// {
+//     Console.WriteLine("Compra inválida");
+// }
+// else if(possivelCompra)
+// {
+//     Console.WriteLine("Compra realizada com sucesso!");
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possivel realizar a compra");
+// }
 
 // Ordem dos Operadores
 // parênteses, expoentes, divisao, multiplicao, adição e subtração.
