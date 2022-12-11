@@ -3,13 +3,38 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using dotnet.Models;
+//***** Estrutura de Repetição(laços) - while
+
+int numero = 5;
+int contador = 0;
+while (contador <= 10) //quanto for verdadeiro
+{
+    Console.WriteLine($"{contador} - {numero} x {contador} = {numero*contador}");
+    contador++; //contador + 1
+}
+
+
+//***** Estrutura de Repetição(laços) - For
+// int numero = 10;
+// for (int i =0; i <= numero; i++)
+// {
+//     Console.WriteLine($"{numero} x {i} = {numero * i}");
+// }
+    
+
+
+
 //usando os métodos da classe Calculadora
-Calculadora cal= new Calculadora();
-cal.somar(20,10);
-cal.subtracao(20,10);
-cal.multiplicacao(20,10);
-cal.divisao(20,10);
-cal.potenciacao(3,3);
+// Calculadora cal= new Calculadora();
+// cal.somar(20,10);
+// cal.subtracao(20,10);
+// cal.multiplicacao(20,10);
+// cal.divisao(20,10);
+// cal.potenciacao(3,3);
+// cal.seno(30);
+// cal.coseno(30);
+// cal.tangente(30);
+// cal.raizQuadrada(4);
 
 
 //Operador NOT 
