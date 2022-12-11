@@ -3,15 +3,35 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using dotnet.Models;
+
+//***** Estrutura de Repetição - Do While
+
+Console.WriteLine("Informe números para serem somandos. Precione 0 para parar");
+int numero = 0;
+int soma = 0;
+int contador = 0;
+do
+{
+     numero = Convert.ToInt32(Console.ReadLine());
+     soma = soma + numero;
+     contador++;
+
+} while (numero != 0);
+Console.WriteLine("A soma dos numeros digitados é: " + soma);
+
 //***** Estrutura de Repetição(laços) - while
 
-int numero = 5;
-int contador = 0;
-while (contador <= 10) //quanto for verdadeiro
-{
-    Console.WriteLine($"{contador} - {numero} x {contador} = {numero*contador}");
-    contador++; //contador + 1
-}
+// int numero = 5;
+// int contador = 0;
+// while (contador <= 10) //quanto for verdadeiro
+// {
+//     Console.WriteLine($"{contador} - {numero} x {contador} = {numero*contador}");
+//     contador++; //contador + 1
+//     if(contador == 5)
+//     {
+//         break; //interromper o laço
+//     }
+// }
 
 
 //***** Estrutura de Repetição(laços) - For
