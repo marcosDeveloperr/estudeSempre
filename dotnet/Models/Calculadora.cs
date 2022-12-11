@@ -24,5 +24,10 @@ namespace dotnet.Models
         {
             Console.WriteLine($"{x} / {y} = {x/y}");
         }
+        public void potenciacao(int x, int y)
+        {
+            double potencia = Math.Pow(x,y); //cast implicido
+            Console.WriteLine($"{x}^{y} = {potencia}");
+        }
     }
 }
