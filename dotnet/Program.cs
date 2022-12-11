@@ -3,21 +3,59 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using dotnet.Models;
+// Menu Interativo
+bool condicao = true; 
+while(condicao)
+{
+    Console.WriteLine("Digite uma das opções do Menu");
+    Console.WriteLine("1 - Cadastrar clientes");
+    Console.WriteLine("2 - Buscar Cliente");
+    Console.WriteLine("3 - Apagar Cliente");
+    Console.WriteLine("4 - Encerrar");
+    int opcao = Convert.ToInt32(Console.ReadLine());
 
+    switch(opcao)
+    {
+        case 1:
+        Console.WriteLine("opção escolhida - 1 cadastro de cliente");
+        
+        break;
+
+        case 2:
+        Console.WriteLine("Opão escolhida - 2 Buscar Cliente");
+       
+        break;
+        
+        case 3:
+        Console.WriteLine("Opção escolhida - 3 Apagar Cliente");
+      
+        break;
+
+        case 4:
+        Console.WriteLine("Opção escolhida - 4 Encerrar");
+        condicao = false;
+        break;
+
+        default:
+        Console.WriteLine("Opção inválida");
+        break;
+    }
+
+}
 //***** Estrutura de Repetição - Do While
 
-Console.WriteLine("Informe números para serem somandos. Precione 0 para parar");
-int numero = 0;
-int soma = 0;
-int contador = 0;
-do
-{
-     numero = Convert.ToInt32(Console.ReadLine());
-     soma = soma + numero;
-     contador++;
+// Console.WriteLine("Informe números para serem somandos. Precione 0 para parar");
+// int numero = 0;
+// int soma = 0;
+// int contador = 0;
+// do
+// {
+//      numero = Convert.ToInt32(Console.ReadLine());
+//      soma = soma + numero;
+//      contador++;
 
-} while (numero != 0);
-Console.WriteLine("A soma dos numeros digitados é: " + soma);
+// } while (numero != 0);
+// Console.WriteLine("A soma dos numeros digitados é: " + soma);
 
 //***** Estrutura de Repetição(laços) - while
 
