@@ -4,6 +4,27 @@
 
 using dotnet.Models;
 
+// Operador Condicional
+int estoque = 3;
+int compras = 0;
+bool possivelCompra = compras> 0 && estoque >= compras;
+
+Console.WriteLine("estoque: " + estoque);
+Console.WriteLine($"compras:  {compras}");
+Console.WriteLine("Foi possível realizar a compra? " + possivelCompra);
+if(compras == 0)
+{
+    Console.WriteLine("Compra inválida");
+}
+else if(possivelCompra)
+{
+    Console.WriteLine("Compra realizada com sucesso!");
+}
+else
+{
+    Console.WriteLine("Não foi possivel realizar a compra");
+}
+
 // Ordem dos Operadores
 // parênteses, expoentes, divisao, multiplicao, adição e subtração.
 // double a = 4/2 + 2;  //divisão e depois a soma
@@ -14,6 +35,13 @@ using dotnet.Models;
 // int inteiro = 10;
 // string texto = inteiro.ToString();  //não precisando usar o Convert.ToString()
 // Console.WriteLine(texto);
+
+//Conversao de maneira segura
+// string a = "15-"; //não é "15"
+// int b = 1;
+ //int.TryParse(a, out b);//vai dar erro em a dando saida ao a variavel b
+// Console.WriteLine(b);
+// Console.WriteLine("Conversao segura");
 
 //***** cast implícito *****
 // int a = int.MaxValue; //valor máximo de um inteiro
