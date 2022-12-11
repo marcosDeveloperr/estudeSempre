@@ -29,5 +29,23 @@ namespace dotnet.Models
             double potencia = Math.Pow(x,y); //cast implicido
             Console.WriteLine($"{x}^{y} = {potencia}");
         }
+        public void seno(double angulo)
+        {
+            double radiano = angulo * Math.PI / 180; //primeiro a divisão de PI com 180
+            double seno = Math.Sin(radiano); //recebendo o angulo em radiano
+            Console.WriteLine($"seno do {angulo}° = {seno}");
+        }
+        public void coseno(double angulo)
+        {
+            double radiano = angulo * Math.PI / 180;
+            double coseno = Math.Cos(radiano);
+            Console.WriteLine($"coseno do {angulo}° = {coseno}");
+        }
+        public void tangente(double angulo)
+        {
+            double radiano = angulo*Math.PI / 180;
+            double tangente = Math.Tan(radiano);
+            Console.WriteLine($"tangente do {angulo}° = {tangente}");
+        }
     }
 }
