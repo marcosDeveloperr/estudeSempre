@@ -3,49 +3,63 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using ExemploFundamentos.Common.Models;
-Pessoa p10 = new Pessoa(); //classe pertecendo a outro projeto ExemploFundamentos.Common pertecendo a solution Pottencial .Net.sln
-p10.Idade = 30;
-p10.Apresentar();
 
-// Menu Interativo
-bool condicao = true; 
-while(condicao)
+//Array
+int [] numeros = new int[5];
+numeros[0] = 10;
+numeros[1] = 20;
+numeros[2] = 30;
+numeros[3] = 40;
+numeros[4] = 50;
+
+for(int contador = 0; contador<numeros.Length; contador++)
 {
-    Console.WriteLine("Digite uma das opções do Menu");
-    Console.WriteLine("1 - Cadastrar clientes");
-    Console.WriteLine("2 - Buscar Cliente");
-    Console.WriteLine("3 - Apagar Cliente");
-    Console.WriteLine("4 - Encerrar");
-    int opcao = Convert.ToInt32(Console.ReadLine());
-
-    switch(opcao)
-    {
-        case 1:
-        Console.WriteLine("opção escolhida - 1 cadastro de cliente");
-        
-        break;
-
-        case 2:
-        Console.WriteLine("Opão escolhida - 2 Buscar Cliente");
-       
-        break;
-        
-        case 3:
-        Console.WriteLine("Opção escolhida - 3 Apagar Cliente");
-      
-        break;
-
-        case 4:
-        Console.WriteLine("Opção escolhida - 4 Encerrar");
-        condicao = false;
-        break;
-
-        default:
-        Console.WriteLine("Opção inválida");
-        break;
-    }
-
+    Console.WriteLine($"Posição {contador} - {numeros[contador]}");
 }
+
+// Pessoa p10 = new Pessoa(); //classe pertecendo a outro projeto ExemploFundamentos.Common pertecendo a solution Pottencial .Net.sln
+// p10.Idade = 30;
+// p10.Apresentar();
+
+// // Menu Interativo
+// bool condicao = true; 
+// while(condicao)
+// {
+//     Console.WriteLine("Digite uma das opções do Menu");
+//     Console.WriteLine("1 - Cadastrar clientes");
+//     Console.WriteLine("2 - Buscar Cliente");
+//     Console.WriteLine("3 - Apagar Cliente");
+//     Console.WriteLine("4 - Encerrar");
+//     int opcao = Convert.ToInt32(Console.ReadLine());
+
+//     switch(opcao)
+//     {
+//         case 1:
+//         Console.WriteLine("opção escolhida - 1 cadastro de cliente");
+        
+//         break;
+
+//         case 2:
+//         Console.WriteLine("Opão escolhida - 2 Buscar Cliente");
+       
+//         break;
+        
+//         case 3:
+//         Console.WriteLine("Opção escolhida - 3 Apagar Cliente");
+      
+//         break;
+
+//         case 4:
+//         Console.WriteLine("Opção escolhida - 4 Encerrar");
+//         condicao = false;
+//         break;
+
+//         default:
+//         Console.WriteLine("Opção inválida");
+//         break;
+//     }
+
+// }
 //***** Estrutura de Repetição - Do While
 
 // Console.WriteLine("Informe números para serem somandos. Precione 0 para parar");
