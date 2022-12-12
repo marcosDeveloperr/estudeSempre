@@ -1,0 +1,12 @@
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\bin\Debug\net6.0\ExemploFundamentos.Common.deps.json
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\bin\Debug\net6.0\ExemploFundamentos.Common.dll
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\bin\Debug\net6.0\ExemploFundamentos.Common.pdb
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.csproj.AssemblyReference.cache
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.GeneratedMSBuildEditorConfig.editorconfig
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.AssemblyInfoInputs.cache
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.AssemblyInfo.cs
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.csproj.CoreCompileInputs.cache
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.dll
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\refint\ExemploFundamentos.Common.dll
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.pdb
+M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ref\ExemploFundamentos.Common.dll
