@@ -17,9 +17,12 @@ for(int contador = 0; contador<numeros.Length; contador++)
     Console.WriteLine($"Posição {contador} - {numeros[contador]}");
 }
 
+//int contadorforeach = 0;
 foreach(int valor in numeros)
 {
     Console.WriteLine(valor);
+    //Console.WriteLine($"Posicao {contadorForeach} - {valor}");
+    //contadorForeach++
 }
 
 // Pessoa p10 = new Pessoa(); //classe pertecendo a outro projeto ExemploFundamentos.Common pertecendo a solution Pottencial .Net.sln
