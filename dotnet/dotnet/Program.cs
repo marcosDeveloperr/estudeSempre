@@ -3,7 +3,6 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using ExemploFundamentos.Common.Models;
-
 //Array
 int [] numeros = new int[5];
 numeros[0] = 10;
@@ -11,6 +10,7 @@ numeros[1] = 20;
 numeros[2] = 30;
 numeros[3] = 40;
 numeros[4] = 50;
+
 
 for(int contador = 0; contador<numeros.Length; contador++)
 {
@@ -24,6 +24,13 @@ foreach(int valor in numeros)
     //Console.WriteLine($"Posicao {contadorForeach} - {valor}");
     //contadorForeach++
 }
+
+Array.Resize(ref numeros, numeros.Length * 2);//pegando o tamanho do array e multiplicando por 2, dobrando o tamanho do array.
+foreach(int papaleguas in numeros)
+{
+    Console.WriteLine(papaleguas);
+}
+
 
 // Pessoa p10 = new Pessoa(); //classe pertecendo a outro projeto ExemploFundamentos.Common pertecendo a solution Pottencial .Net.sln
 // p10.Idade = 30;
