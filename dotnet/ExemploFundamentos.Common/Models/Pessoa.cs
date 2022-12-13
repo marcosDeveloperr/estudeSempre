@@ -16,6 +16,7 @@ namespace ExemploFundamentos.Common.Models
         //protegido e maninupalado apenas por essa classe de forma direta. 
         //tendo que utilizar o get e set
         private string _nome; 
+        private int _idade;
 
         //validação dos get e set
         public string Nome 
@@ -39,7 +40,22 @@ namespace ExemploFundamentos.Common.Models
 
             }        
         }
-        public int Idade { get; set; }
+        public int Idade 
+        { 
+            get
+            {
+                return _idade;
+            } 
+            set
+            {
+                if(value < 0)
+                {
+                    throw new ArgumentException("Idade não pode ter valor negativo");
+                }
+                _idade = value;
+            } 
+            
+        }
 
         public void Apresentar()
         {
