@@ -19,11 +19,14 @@ namespace ExemploFundamentos.Common.Models
 
         //validação dos get e set
         public string Nome 
-        {         
-            get
-            {
-                return _nome.ToUpper();//campo com letras maiúsculas.
-            } 
+        {
+            // get
+            // {
+            //     return _nome.ToUpper();//campo com letras maiúsculas.
+            // } 
+            
+            //utilizando body expressions
+            get => _nome.ToUpper();//campo com letras maiúsculas.
             set
             {
                 //Validação é não aceitar campo vazio e encerrar o programa.
