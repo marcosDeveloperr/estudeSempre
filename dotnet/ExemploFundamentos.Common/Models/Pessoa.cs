@@ -15,7 +15,7 @@ namespace ExemploFundamentos.Common.Models
 
         //protegido e maninupalado apenas por essa classe de forma direta. 
         //tendo que utilizar o get e set
-        private string _nome; 
+        private string _nome; //Campo Protegida - Não acessiveis externamente.
         private int _idade;
 
         //validação dos get e set
@@ -40,6 +40,17 @@ namespace ExemploFundamentos.Common.Models
 
             }        
         }
+        
+        public string  sobreNome { get; set; }
+        
+        //somente get, não consegue atribuir valores, sendo apenas de leitura.
+        public string nomeCompleto => $"{Nome} {sobreNome}".ToUpper();
+        // {
+        //     // get
+        //     // {
+        //     //     return _nome + sobreNome;
+        //     // }
+        // }
         public int Idade 
         { 
             get
@@ -60,7 +71,7 @@ namespace ExemploFundamentos.Common.Models
         public void Apresentar()
         {
             //implicitamente (...por baixo dos panos.) coloca uma propriedade entre  { } estar chamando um método get
-            Console.WriteLine($"Olá meu nome {Nome} e minha idade {Idade}"); 
+            Console.WriteLine($"Olá meu nome {nomeCompleto} e minha idade {Idade}"); 
         }
     }
 }
