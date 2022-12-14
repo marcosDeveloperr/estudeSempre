@@ -30,6 +30,13 @@ namespace ExemploFundamentos.Common.Models
             //return Alunos.Remove(aluno); //o método Remove retorna um booleano.
 
         }
+        public void ListarAlunos()
+        {
+            foreach(Pessoa aluno in Alunos)
+            {
+                Console.WriteLine(aluno.nomeCompleto);
+            }
+        }
 
     }
 }
