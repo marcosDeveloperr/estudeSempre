@@ -5,13 +5,13 @@
 using ExemploFundamentos.Common.Models;
 
 //1. criando 3 objetos pessoas com 
-Pessoa p20 = new Pessoa();
+Pessoa p20 = new Pessoa("Patricia","França");
 Pessoa p30 = new Pessoa();
 Pessoa p40 = new Pessoa();
 
 //2. atribuindo valores as propriedades nome e sobreNome aos objetos pessoa
-p20.Nome = "Patricia";
-p20.sobreNome = "França";
+//p20.Nome = "Patricia"; utilizando o segundo construtor que recebe o parâmetro nome e sobreNome (linha 8)
+//p20.sobreNome = "França";
 p30.Nome = "Rebeca";
 p30.sobreNome = "Italia";
 p40.Nome = "Gabriella";
