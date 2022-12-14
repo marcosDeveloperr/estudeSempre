@@ -10,6 +10,18 @@ namespace ExemploFundamentos.Common.Models
     /// </summary>
     public class Pessoa
     {
+        //construtor Pessoa default - sem parâmetros.
+        public Pessoa()
+        {
+
+        }
+        public Pessoa(string nome, string sobreNome)
+        {
+            this.Nome = nome;
+            this.sobreNome = sobreNome;
+        }
+
+
         //validando os get e set na propriedade nome
         //criando um campo de armazenamento
 
