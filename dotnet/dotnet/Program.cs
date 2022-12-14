@@ -43,8 +43,9 @@ using ExemploFundamentos.Common.Models;
 
  Pessoa p10 = new Pessoa(); //classe pertecendo a outro projeto ExemploFundamentos.Common pertecendo a solution Pottencial .Net.sln
  //p10.Nome = "marcos";
- p10.Nome = "";
- p10.Idade = 30;
+ p10.Nome = "Marcos";
+p10.sobreNome = "Portugal";
+p10.Idade = 30;
  p10.Apresentar();
 
 // // Menu Interativo
