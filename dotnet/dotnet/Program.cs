@@ -3,6 +3,62 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using ExemploFundamentos.Common.Models;
+
+//1. criando 3 objetos pessoas com 
+Pessoa p20 = new Pessoa();
+Pessoa p30 = new Pessoa();
+Pessoa p40 = new Pessoa();
+
+//2. atribuindo valores as propriedades nome e sobreNome aos objetos pessoa
+p20.Nome = "Patricia";
+p20.sobreNome = "França";
+p30.Nome = "Rebeca";
+p30.sobreNome = "Italia";
+p40.Nome = "Gabriella";
+p40.sobreNome = "Brasil";
+
+//3. Criar um curso com o nome: curso de inglês
+Cursos cursoDeIngles = new Cursos();
+cursoDeIngles.nome = "Curso de Inglês";
+
+//4. Cria uma lista de alunos para o curso de inglês
+cursoDeIngles.Alunos = new List<Pessoa>();
+cursoDeIngles.adicionarAluno(p20);//adicionando o aluno 
+cursoDeIngles.adicionarAluno(p30);
+cursoDeIngles.adicionarAluno(p40);
+
+//5. Lista os alunos matriculados no curso de inglês
+cursoDeIngles.ListarAlunos();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Array
 // int [] numeros = new int[5];
 // numeros[0] = 10;
@@ -41,12 +97,12 @@ using ExemploFundamentos.Common.Models;
 // }
 
 
- Pessoa p10 = new Pessoa(); //classe pertecendo a outro projeto ExemploFundamentos.Common pertecendo a solution Pottencial .Net.sln
+//Pessoa p10 = new Pessoa(); //classe pertecendo a outro projeto ExemploFundamentos.Common pertecendo a solution Pottencial .Net.sln
  //p10.Nome = "marcos";
- p10.Nome = "Marcos";
-p10.sobreNome = "Portugal";
-p10.Idade = 30;
- p10.Apresentar();
+ //p10.Nome = "Marcos";
+ //p10.sobreNome = "Portugal";
+// p10.Idade = 30;
+ //p10.Apresentar();
 
 // // Menu Interativo
 // bool condicao = true; 
