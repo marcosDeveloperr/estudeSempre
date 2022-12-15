@@ -34,7 +34,8 @@ namespace ExemploFundamentos.Common.Models
         {   //Apareça a numeração de ordem dos alunos incluido na lista
             for (int i = 0; i < Alunos.Count; i++)//Count porque Alunos é uma lista, funciona como length 
             {
-                string textoVisualizadoConsole = "Nº " + i + " "+ Alunos[i].nomeCompleto;
+                //string textoVisualizadoConsole = "Nº " + i + " "+ Alunos[i].nomeCompleto;
+                string textoVisualizadoConsole = $"Nº {i + 1} - {Alunos[i].nomeCompleto}"; //melhorando o código
                 Console.WriteLine(textoVisualizadoConsole);
             }
             
