@@ -31,11 +31,19 @@ namespace ExemploFundamentos.Common.Models
 
         }
         public void ListarAlunos()
-        {
-            foreach(Pessoa aluno in Alunos)
+        {   //Apareça a numeração de ordem dos alunos incluido na lista
+            for (int i = 0; i < Alunos.Count; i++)//Count porque Alunos é uma lista, funciona como length 
             {
-                Console.WriteLine(aluno.nomeCompleto);
+                string textoVisualizadoConsole = "Nº " + i + " "+ Alunos[i].nomeCompleto;
+                Console.WriteLine(textoVisualizadoConsole);
             }
+            
+
+
+            // foreach(Pessoa aluno in Alunos)
+            // {
+            //     Console.WriteLine(aluno.nomeCompleto);
+            // }
         }
 
     }
