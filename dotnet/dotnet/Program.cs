@@ -10,6 +10,19 @@ decimal valorMonetario = 1582.40M; //M maiusculo exigencia da variavel decimal.
 Console.WriteLine($"{valorMonetario:C}"); //informando que a moeda é real referencia na configuração do meu sistema
 
 
+//Personalisando valor monetario
+Console.WriteLine(valorMonetario.ToString("N2")); //apenas numeros
+
+
+//Porcentagem
+double pocentagem = .3421;
+Console.WriteLine(pocentagem.ToString("P"));//colocar o numero em porcentagem
+
+//nuemro
+int numero = 123456;
+Console.WriteLine(numero.ToString("##-##-##"));
+
+
 
 
 
