@@ -4,6 +4,40 @@
 
 using ExemploFundamentos.Common.Models;
 
+
+decimal valorMonetario = 1582.40M; //M maiusculo exigencia da variavel decimal.
+//Console.WriteLine(valorMonetario);//Não informa qual moeda é esse valor monetário.
+Console.WriteLine($"{valorMonetario:C}"); //informando que a moeda é real referencia na configuração do meu sistema
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //1. criando 3 objetos pessoas com 
 Pessoa p20 = new Pessoa("Patricia","França");
 Pessoa p30 = new Pessoa(nome: "Rebeca", sobreNome: "Italia");
