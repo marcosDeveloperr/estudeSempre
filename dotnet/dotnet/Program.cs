@@ -4,25 +4,78 @@
 
 using ExemploFundamentos.Common.Models;
 
-
-decimal valorMonetario = 1582.40M; //M maiusculo exigencia da variavel decimal.
-//Console.WriteLine(valorMonetario);//Não informa qual moeda é esse valor monetário.
-Console.WriteLine($"{valorMonetario:C}"); //informando que a moeda é real referencia na configuração do meu sistema
-
-
-//Personalisando valor monetario
-Console.WriteLine(valorMonetario.ToString("N2")); //apenas numeros
+//Desafios de Código Básico 
+//1. entrada de um numero, por exemplo 234
+//2. Multiplicar por cada digito do número de entrada = 2 * 3 * 4 = 24
+//3. somar por cada digito do número de entrada 2 + 3 + 4 = 9
+//4. Subtração do resultado da multiplicação pela soma 24 - 9 = 15
+//5. Saída é 15
 
 
-//Porcentagem
-double pocentagem = .3421;
-Console.WriteLine(pocentagem.ToString("P"));//colocar o numero em porcentagem
-
-//nuemro
-int numero = 123456;
-Console.WriteLine(numero.ToString("##-##-##"));
+//entrada é string sendo convertida para inteiro
+int numeroDigitado = Convert.ToInt32(Console.ReadLine());
+int soma = 0; int multiplicacao = 1; int saida = 0;
 
 
+while(numeroDigitado>0)
+{
+    //1234
+    int ultimoDigito = numeroDigitado % 10; //sempre pego o ultimo digito
+    soma = soma + ultimoDigito; //somando os ultimos digitos
+    multiplicacao = multiplicacao * ultimoDigito;
+    numeroDigitado = numeroDigitado / 10; //123
+    saida = multiplicacao - soma;
+
+}
+Console.WriteLine(soma);
+Console.WriteLine(multiplicacao);
+Console.WriteLine(saida);
+
+//Desafio
+
+class DIO {
+        
+static void Main(string[] args){
+
+        int n = int.Parse(Console.ReadLine());
+        int p = 1, s = 0;
+        while (n > 0){
+             int l = n % 10; //pegando o ultimo numero
+// TODO: Crie as outras condições necessárias para a resolução do desafio:
+             s += l; //somando os ultimos numeros
+             p *= l;
+                  ;
+             n /=  10;
+           }
+
+           Console.WriteLine(p-s);
+        }
+    }
+
+
+    //Terceiro desafio - Divisores
+    class Solution {
+    public static void Main(string[] args)
+    {   //2
+        int n = int.Parse(Console.ReadLine()); //numero inteiro
+        int count = 0;
+       
+ 
+        for (int i = 1; i <= n; i++) {
+// TODO: Crie as outras condições necessárias para a resolução do desafio:
+            if (n % i == 0) 
+            {
+                count++;
+            }
+            if (count > n) 
+            {
+                
+                Console.WriteLine("false");
+            }
+        }
+         Console.WriteLine(count == 3);
+    }
+}
 
 
 
@@ -51,31 +104,158 @@ Console.WriteLine(numero.ToString("##-##-##"));
 
 
 
-//1. criando 3 objetos pessoas com 
-Pessoa p20 = new Pessoa("Patricia","França");
-Pessoa p30 = new Pessoa(nome: "Rebeca", sobreNome: "Italia");
-Pessoa p40 = new Pessoa();
 
-//2. atribuindo valores as propriedades nome e sobreNome aos objetos pessoa
-//p20.Nome = "Patricia"; utilizando o segundo construtor que recebe o parâmetro nome e sobreNome (linha 8)
-//p20.sobreNome = "França";
-//p30.Nome = "Rebeca";
-//p30.sobreNome = "Italia";
-p40.Nome = "Gabriella";
-p40.sobreNome = "Brasil";
 
-//3. Criar um curso com o nome: curso de inglês
-Cursos cursoDeIngles = new Cursos();
-cursoDeIngles.nome = "Curso de Inglês";
 
-//4. Cria uma lista de alunos para o curso de inglês
-cursoDeIngles.Alunos = new List<Pessoa>();
-cursoDeIngles.adicionarAluno(p20);//adicionando o aluno 
-cursoDeIngles.adicionarAluno(p30);
-cursoDeIngles.adicionarAluno(p40);
 
-//5. Lista os alunos matriculados no curso de inglês
-cursoDeIngles.ListarAlunos();
+
+
+
+
+
+
+
+//Exceções e Coleções
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// DateTime data = DateTime.Now;
+// Console.WriteLine(data); //data e horário atual
+// Console.WriteLine(data.ToShortDateString());//data
+// Console.WriteLine(data.ToShortTimeString());//hora
+
+// DateTime date = DateTime.Parse("17/04/2022 18:00"); //Convertendo uma string em Datetime
+// Console.WriteLine(date);
+
+// //Passa um string com data e hora
+// string dataString = "2022-04-17 18:00";
+// // DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime data);
+// // Console.WriteLine(data);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// decimal valorMonetario = 1582.40M; //M maiusculo exigencia da variavel decimal.
+// //Console.WriteLine(valorMonetario);//Não informa qual moeda é esse valor monetário.
+// Console.WriteLine($"{valorMonetario:C}"); //informando que a moeda é real referencia na configuração do meu sistema
+
+
+// //Personalisando valor monetario
+// Console.WriteLine(valorMonetario.ToString("N2")); //apenas numeros
+
+
+// //Porcentagem
+// double pocentagem = .3421;
+// Console.WriteLine(pocentagem.ToString("P"));//colocar o numero em porcentagem
+
+// //nuemro
+// int numero = 123456;
+// Console.WriteLine(numero.ToString("##-##-##"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //1. criando 3 objetos pessoas com 
+// Pessoa p20 = new Pessoa("Patricia","França");
+// Pessoa p30 = new Pessoa(nome: "Rebeca", sobreNome: "Italia");
+// Pessoa p40 = new Pessoa();
+
+// //2. atribuindo valores as propriedades nome e sobreNome aos objetos pessoa
+// //p20.Nome = "Patricia"; utilizando o segundo construtor que recebe o parâmetro nome e sobreNome (linha 8)
+// //p20.sobreNome = "França";
+// //p30.Nome = "Rebeca";
+// //p30.sobreNome = "Italia";
+// p40.Nome = "Gabriella";
+// p40.sobreNome = "Brasil";
+
+// //3. Criar um curso com o nome: curso de inglês
+// Cursos cursoDeIngles = new Cursos();
+// cursoDeIngles.nome = "Curso de Inglês";
+
+// //4. Cria uma lista de alunos para o curso de inglês
+// cursoDeIngles.Alunos = new List<Pessoa>();
+// cursoDeIngles.adicionarAluno(p20);//adicionando o aluno 
+// cursoDeIngles.adicionarAluno(p30);
+// cursoDeIngles.adicionarAluno(p40);
+
+// //5. Lista os alunos matriculados no curso de inglês
+// cursoDeIngles.ListarAlunos();
 
 
 
@@ -145,11 +325,11 @@ cursoDeIngles.ListarAlunos();
 
 
 //Pessoa p10 = new Pessoa(); //classe pertecendo a outro projeto ExemploFundamentos.Common pertecendo a solution Pottencial .Net.sln
- //p10.Nome = "marcos";
- //p10.Nome = "Marcos";
- //p10.sobreNome = "Portugal";
+//p10.Nome = "marcos";
+//p10.Nome = "Marcos";
+//p10.sobreNome = "Portugal";
 // p10.Idade = 30;
- //p10.Apresentar();
+//p10.Apresentar();
 
 // // Menu Interativo
 // bool condicao = true; 
@@ -166,17 +346,17 @@ cursoDeIngles.ListarAlunos();
 //     {
 //         case 1:
 //         Console.WriteLine("opção escolhida - 1 cadastro de cliente");
-        
+
 //         break;
 
 //         case 2:
 //         Console.WriteLine("Opão escolhida - 2 Buscar Cliente");
-       
+
 //         break;
-        
+
 //         case 3:
 //         Console.WriteLine("Opção escolhida - 3 Apagar Cliente");
-      
+
 //         break;
 
 //         case 4:
@@ -226,7 +406,7 @@ cursoDeIngles.ListarAlunos();
 // {
 //     Console.WriteLine($"{numero} x {i} = {numero * i}");
 // }
-    
+
 
 
 
@@ -384,7 +564,7 @@ cursoDeIngles.ListarAlunos();
 //Conversao de maneira segura
 // string a = "15-"; //não é "15"
 // int b = 1;
- //int.TryParse(a, out b);//vai dar erro em a dando saida ao a variavel b
+//int.TryParse(a, out b);//vai dar erro em a dando saida ao a variavel b
 // Console.WriteLine(b);
 // Console.WriteLine("Conversao segura");
 
