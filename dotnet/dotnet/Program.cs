@@ -3,37 +3,110 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using ExemploFundamentos.Common.Models;
+//Exceções e Coleções - Fila (FIFO) - Primeiro que entra, primeiro que sai.
+
+Queue<int> fila = new Queue<int>();//fila de inteiro.
+fila.Enqueue(10);//adicionando no final da fila  
+fila.Enqueue(20);
+fila.Enqueue(30);
+fila.Enqueue(40);
+fila.Enqueue(50);
+
+foreach (var filaInteiros in fila)
+{
+    Console.WriteLine(filaInteiros);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ExemploExcessao ex = new ExemploExcessao();
+// ex.Metodo1(); //Progrma vai ser encerrado porque não foi trata na classe ExemploExcessao, jogada throw.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Exceções e Coleções
 
-try
-{
-    string[] linha = File.ReadAllLines("arquivos/arquivoLeitura.txt"); //caminho do arquivos a ser lido.
-    //string[] linha = File.ReadAllLines("arquivos/pasta/arquivoLeitura.txt"); //diretorio não encontrado do arquivos a ser lido.
-    //string[] linha = File.ReadAllLines("arquivos/pasta/_arquivoLeitura.txt"); //caminho do arquivos a ser lido.
+// try
+// {
+//     string[] linha = File.ReadAllLines("arquivos/arquivoLeitura.txt"); //caminho do arquivos a ser lido.
+//     //string[] linha = File.ReadAllLines("arquivos/pasta/arquivoLeitura.txt"); //diretorio não encontrado do arquivos a ser lido.
+//     //string[] linha = File.ReadAllLines("arquivos/pasta/_arquivoLeitura.txt"); //caminho do arquivos a ser lido.
 
-    foreach (var linhasDoAquivo in linha)
-    {
-        Console.WriteLine(linhasDoAquivo);
-    }
-}
-catch(FileNotFoundException e) //execeção especifica
-{
-    Console.WriteLine($"Ocorreu um erro no arquivo. Diretório percorrido, porém o arquivo Não encontrado. {e.Message}");
-}
-catch(DirectoryNotFoundException e) //execeção especifica
-{
-    Console.WriteLine($"Ocorreu um erro no arquivo. Diretório não encontrado. {e.Message}");
-}
-catch(Exception e) //exceção genérica
-{
-    //informa a mensagem e o motivo do erro.
-    Console.WriteLine($"Ocorreu uma exceção genérica {e.Message}");
-}
-finally
-{
-    Console.WriteLine("Chegou até aqui, dando erro ou não.");
-}
+//     foreach (var linhasDoAquivo in linha)
+//     {
+//         Console.WriteLine(linhasDoAquivo);
+//     }
+// }
+// catch(FileNotFoundException e) //execeção especifica
+// {
+//     Console.WriteLine($"Ocorreu um erro no arquivo. Diretório percorrido, porém o arquivo Não encontrado. {e.Message}");
+// }
+// catch(DirectoryNotFoundException e) //execeção especifica
+// {
+//     Console.WriteLine($"Ocorreu um erro no arquivo. Diretório não encontrado. {e.Message}");
+// }
+// catch(Exception e) //exceção genérica
+// {
+//     //informa a mensagem e o motivo do erro.
+//     Console.WriteLine($"Ocorreu uma exceção genérica {e.Message}");
+// }
+// finally
+// {
+//     Console.WriteLine("Chegou até aqui, dando erro ou não.");
+// }
 
 
 
