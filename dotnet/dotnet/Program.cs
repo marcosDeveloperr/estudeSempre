@@ -5,12 +5,22 @@
 using ExemploFundamentos.Common.Models;
 
 //Exceções e Coleções
-string[] linha = File.ReadAllLines("arquivos/arquivoLeitura.txt"); //caminho do arquivos a ser lido.
 
-foreach (var linhasDoAquivo in linha)
+try
 {
-    Console.WriteLine(linhasDoAquivo);
+    string[] linha = File.ReadAllLines("arquivos/arquivoLeitura.txt"); //caminho do arquivos a ser lido.
+
+    foreach (var linhasDoAquivo in linha)
+    {
+        Console.WriteLine(linhasDoAquivo);
+    }
 }
+catch (Exception e)
+{
+    //informa a mensagem e o motivo do erro.
+    Console.WriteLine($"Ocorreu uma exceção genérica {e.Message}");
+}
+Console.WriteLine("o Programa exibiu o errou, porém continuou executando o código");
 
 
 
@@ -72,7 +82,7 @@ foreach (var linhasDoAquivo in linha)
 //Desafio
 
 // class DIO {
-        
+
 // static void Main(string[] args){
 
 //         int n = int.Parse(Console.ReadLine());
@@ -97,8 +107,8 @@ foreach (var linhasDoAquivo in linha)
 //     {   //2
 //         int n = int.Parse(Console.ReadLine()); //numero inteiro
 //         int count = 0;
-       
- 
+
+
 //         for (int i = 1; i <= n; i++) {
 // // TODO: Crie as outras condições necessárias para a resolução do desafio:
 //             if (n % i == 0) 
@@ -107,7 +117,7 @@ foreach (var linhasDoAquivo in linha)
 //             }
 //             if (count > n) 
 //             {
-                
+
 //                 Console.WriteLine("false");
 //             }
 //         }
