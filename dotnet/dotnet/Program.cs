@@ -4,6 +4,44 @@
 
 using ExemploFundamentos.Common.Models;
 
+//Exceções e Coleções
+string[] linha = File.ReadAllLines("arquivos/arquivoLeitura.txt"); //caminho do arquivos a ser lido.
+
+foreach (var linhasDoAquivo in linha)
+{
+    Console.WriteLine(linhasDoAquivo);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Desafios de Código Básico 
 //1. entrada de um numero, por exemplo 234
 //2. Multiplicar por cada digito do número de entrada = 2 * 3 * 4 = 24
@@ -13,69 +51,69 @@ using ExemploFundamentos.Common.Models;
 
 
 //entrada é string sendo convertida para inteiro
-int numeroDigitado = Convert.ToInt32(Console.ReadLine());
-int soma = 0; int multiplicacao = 1; int saida = 0;
+// int numeroDigitado = Convert.ToInt32(Console.ReadLine());
+// int soma = 0; int multiplicacao = 1; int saida = 0;
 
 
-while(numeroDigitado>0)
-{
-    //1234
-    int ultimoDigito = numeroDigitado % 10; //sempre pego o ultimo digito
-    soma = soma + ultimoDigito; //somando os ultimos digitos
-    multiplicacao = multiplicacao * ultimoDigito;
-    numeroDigitado = numeroDigitado / 10; //123
-    saida = multiplicacao - soma;
+// while(numeroDigitado>0)
+// {
+//     //1234
+//     int ultimoDigito = numeroDigitado % 10; //sempre pego o ultimo digito
+//     soma = soma + ultimoDigito; //somando os ultimos digitos
+//     multiplicacao = multiplicacao * ultimoDigito;
+//     numeroDigitado = numeroDigitado / 10; //123
+//     saida = multiplicacao - soma;
 
-}
-Console.WriteLine(soma);
-Console.WriteLine(multiplicacao);
-Console.WriteLine(saida);
+// }
+// Console.WriteLine(soma);
+// Console.WriteLine(multiplicacao);
+// Console.WriteLine(saida);
 
 //Desafio
 
-class DIO {
+// class DIO {
         
-static void Main(string[] args){
+// static void Main(string[] args){
 
-        int n = int.Parse(Console.ReadLine());
-        int p = 1, s = 0;
-        while (n > 0){
-             int l = n % 10; //pegando o ultimo numero
-// TODO: Crie as outras condições necessárias para a resolução do desafio:
-             s += l; //somando os ultimos numeros
-             p *= l;
-                  ;
-             n /=  10;
-           }
+//         int n = int.Parse(Console.ReadLine());
+//         int p = 1, s = 0;
+//         while (n > 0){
+//              int l = n % 10; //pegando o ultimo numero
+// // TODO: Crie as outras condições necessárias para a resolução do desafio:
+//              s += l; //somando os ultimos numeros
+//              p *= l;
+//                   ;
+//              n /=  10;
+//            }
 
-           Console.WriteLine(p-s);
-        }
-    }
+//            Console.WriteLine(p-s);
+//         }
+//     }
 
 
-    //Terceiro desafio - Divisores
-    class Solution {
-    public static void Main(string[] args)
-    {   //2
-        int n = int.Parse(Console.ReadLine()); //numero inteiro
-        int count = 0;
+//     //Terceiro desafio - Divisores
+//     class Solution {
+//     public static void Main(string[] args)
+//     {   //2
+//         int n = int.Parse(Console.ReadLine()); //numero inteiro
+//         int count = 0;
        
  
-        for (int i = 1; i <= n; i++) {
-// TODO: Crie as outras condições necessárias para a resolução do desafio:
-            if (n % i == 0) 
-            {
-                count++;
-            }
-            if (count > n) 
-            {
+//         for (int i = 1; i <= n; i++) {
+// // TODO: Crie as outras condições necessárias para a resolução do desafio:
+//             if (n % i == 0) 
+//             {
+//                 count++;
+//             }
+//             if (count > n) 
+//             {
                 
-                Console.WriteLine("false");
-            }
-        }
-         Console.WriteLine(count == 3);
-    }
-}
+//                 Console.WriteLine("false");
+//             }
+//         }
+//          Console.WriteLine(count == 3);
+//     }
+// }
 
 
 
@@ -83,39 +121,6 @@ static void Main(string[] args){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Exceções e Coleções
 
 
 
