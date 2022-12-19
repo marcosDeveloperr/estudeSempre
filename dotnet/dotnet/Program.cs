@@ -17,20 +17,24 @@ try
         Console.WriteLine(linhasDoAquivo);
     }
 }
-catch(FileNotFoundException e)
+catch(FileNotFoundException e) //execeção especifica
 {
-    Console.WriteLine($"Ocorreu um erro no arquivo. Arquivo Não encontrado. {e.Message}");
+    Console.WriteLine($"Ocorreu um erro no arquivo. Diretório percorrido, porém o arquivo Não encontrado. {e.Message}");
 }
-catch(DirectoryNotFoundException e)
+catch(DirectoryNotFoundException e) //execeção especifica
 {
     Console.WriteLine($"Ocorreu um erro no arquivo. Diretório não encontrado. {e.Message}");
 }
-catch(Exception e)
+catch(Exception e) //exceção genérica
 {
     //informa a mensagem e o motivo do erro.
     Console.WriteLine($"Ocorreu uma exceção genérica {e.Message}");
 }
-Console.WriteLine("o Programa exibiu o errou, porém continuou executando o código");
+finally
+{
+    Console.WriteLine("Chegou até aqui, dando erro ou não.");
+}
+
 
 
 
