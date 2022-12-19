@@ -3,20 +3,86 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using ExemploFundamentos.Common.Models;
-//Exceções e Coleções - Fila (FIFO) - Primeiro que entra, primeiro que sai.
+//Exceções e Coleções - Pilha (LIFO) - Primeiro (LI - last-in) que entra, último (FO - first-out) a sair. 
+Stack<int> pilha = new Stack<int>(); //pilha do tipo inteiro.
 
-Queue<int> fila = new Queue<int>();//fila de inteiro.
-fila.Enqueue(10);//adicionando no final da fila  
-fila.Enqueue(20);
-fila.Enqueue(30);
-fila.Enqueue(40);
-fila.Enqueue(50);
+//adicionar elementos na pilha
+pilha.Push(100);//primeiro que entrou - last-in, porém ficou no final da pilha, ou seja último a sair
+pilha.Push(200);
+pilha.Push(300);
+pilha.Push(400);
+pilha.Push(500); //primeiro a sair, sempre removendo pelo topo da pilha.
 
-foreach (var filaInteiros in fila)
+//percorrer a pilha
+foreach(int pilhas in pilha)
 {
-    Console.WriteLine(filaInteiros);
+    Console.WriteLine(pilhas);
 }
 
+
+//remove o elemento do topo da pilha.
+pilha.Pop();
+
+//percorrer a pilha
+foreach(int pilhas in pilha)
+{
+    Console.WriteLine(pilhas);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Exceções e Coleções - Fila (FIFO) - Primeiro que entra, primeiro que sai. Ultimo que entrar ficando no final da fila
+
+// Queue<int> fila = new Queue<int>();//fila de inteiro.
+// fila.Enqueue(10);//adicionando no final da fila  
+// fila.Enqueue(20);
+// fila.Enqueue(30);
+// fila.Enqueue(40);
+// fila.Enqueue(50);
+
+// foreach (var filaInteiros in fila)
+// {
+//     Console.WriteLine(filaInteiros);
+// }
+
+//retirando um elemento da fila
+//fila.Dequeue(); //remove o primeiro elemento da fila
+// Console.WriteLine($"Removendo um elemento:  {fila.Dequeue()}");
+
+// fila.Enqueue(70);
+
+// //percorrer novamente a fila
+// foreach (var filaInteiros in fila)
+// {
+//     Console.WriteLine(filaInteiros);
+// }
 
 
 
