@@ -9,13 +9,23 @@ using ExemploFundamentos.Common.Models;
 try
 {
     string[] linha = File.ReadAllLines("arquivos/arquivoLeitura.txt"); //caminho do arquivos a ser lido.
+    //string[] linha = File.ReadAllLines("arquivos/pasta/arquivoLeitura.txt"); //diretorio não encontrado do arquivos a ser lido.
+    //string[] linha = File.ReadAllLines("arquivos/pasta/_arquivoLeitura.txt"); //caminho do arquivos a ser lido.
 
     foreach (var linhasDoAquivo in linha)
     {
         Console.WriteLine(linhasDoAquivo);
     }
 }
-catch (Exception e)
+catch(FileNotFoundException e)
+{
+    Console.WriteLine($"Ocorreu um erro no arquivo. Arquivo Não encontrado. {e.Message}");
+}
+catch(DirectoryNotFoundException e)
+{
+    Console.WriteLine($"Ocorreu um erro no arquivo. Diretório não encontrado. {e.Message}");
+}
+catch(Exception e)
 {
     //informa a mensagem e o motivo do erro.
     Console.WriteLine($"Ocorreu uma exceção genérica {e.Message}");
