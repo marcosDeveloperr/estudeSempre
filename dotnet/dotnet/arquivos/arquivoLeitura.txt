@@ -1,0 +1,2 @@
+linha 1 - arquivo de leitura
+linha 2 - esse arquivo estou usando para ler através de uma classe.
