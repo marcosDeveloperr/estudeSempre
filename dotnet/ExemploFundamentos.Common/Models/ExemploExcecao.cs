@@ -15,8 +15,16 @@ namespace ExemploFundamentos.Common.Models
         }
         public void Metodo2()
         {
-            
-                Metodo3();           
+                try
+                {
+                    Metodo3();      
+                }
+                catch (Exception)
+                {
+
+                Console.WriteLine("Throw achou o try catch no método 2");
+            }
+                     
             
         }
         public void Metodo3()
