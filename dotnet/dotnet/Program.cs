@@ -9,11 +9,35 @@ estados.Add("SP", "São Paulo"); //adicionando chave e o valor
 estados.Add("BA", "Bahia");
 estados.Add("MG", "Minas Gerais");
 
-foreach(var chavesDuplas in estados)
-{
-    Console.WriteLine($"Chave:  {chavesDuplas.Key}, Valor: {chavesDuplas.Value}");
-}
+// foreach(var chavesDuplas in estados)
+// {
+//     Console.WriteLine($"Chave:  {chavesDuplas.Key}, Valor: {chavesDuplas.Value}");
+// }
 
+// Console.WriteLine("------Removendo item-------");
+// estados.Remove("MG");//removendo pela chave
+
+
+// Console.WriteLine("---------Valor alterado---------");
+// estados["SP"] = "São Paulo - valor alterado";
+
+// foreach(var chavesDuplas in estados)
+// {
+//     Console.WriteLine($"Chave:  {chavesDuplas.Key}, Valor: {chavesDuplas.Value}");
+// }
+
+
+//Buscando chave no Dictionary
+string chave = "SP";
+Console.WriteLine($"buscando chave: {chave}");
+if(estados.ContainsKey(chave))
+{
+    Console.WriteLine($"chave existente: {chave}");
+}
+else
+{
+    Console.WriteLine($"chave inexistente: {chave}");
+}
 
 
 
