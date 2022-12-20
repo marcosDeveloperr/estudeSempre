@@ -4,24 +4,67 @@
 
 using ExemploFundamentos.Common.Models;
 
-//Tupla
-LeituraArquivo arquivo = new LeituraArquivo();
-var (sucesso, linhasRetornadas, quantidadeLinha) = arquivo.LerAquivoTupla("arquivos/arquivoLeitura.txt");
-//var (sucesso, linhasRetornadas, _) = arquivo.LerAquivoTupla("arquivos/arquivoLeitura.txt");
-//o underline no terceiro parametro informa que estou fazendo o descartes, não estou utilizando.
+//objeto do tipo Pessoa
+Pessoa p90 = new Pessoa("Marcos", "Figueiredo");
 
-if(sucesso)
-{
-    Console.WriteLine($"Quantidades de linhas do arquivo: " + quantidadeLinha);
-    foreach (var linhas in linhasRetornadas)
-    {
-        Console.WriteLine(linhas);
-    }
-}
-else
-{
-    Console.WriteLine("Não foi possivel ler o arquivo");
-}
+//descontruindo.
+//a ordem desses parâmetros são os mesmo que estão no Descontruct da classe Pessoa
+(string nome, string sobreNome) = p90;
+
+//colocando as propriedade do objeto em variaveis
+Console.WriteLine($"{nome} {sobreNome}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //Tupla
+// LeituraArquivo arquivo = new LeituraArquivo();
+// var (sucesso, linhasRetornadas, quantidadeLinha) = arquivo.LerAquivoTupla("arquivos/arquivoLeitura.txt");
+// //var (sucesso, linhasRetornadas, _) = arquivo.LerAquivoTupla("arquivos/arquivoLeitura.txt");
+// //o underline no terceiro parametro informa que estou fazendo o descartes, não estou utilizando.
+
+// if(sucesso)
+// {
+//     Console.WriteLine($"Quantidades de linhas do arquivo: " + quantidadeLinha);
+//     foreach (var linhas in linhasRetornadas)
+//     {
+//         Console.WriteLine(linhas);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possivel ler o arquivo");
+// }
 
 
 
@@ -286,19 +329,18 @@ else
 // class DIO {
 
 // static void Main(string[] args){
-
-//         int n = int.Parse(Console.ReadLine());
-//         int p = 1, s = 0;
-//         while (n > 0){
-//              int l = n % 10; //pegando o ultimo numero
+//
+//         int n = int.Parse(Console.ReadLine()); //string digitada no console convertida em numero
+//         int p = 1, s = 0; //variavels inicializada com 1 e 0
+//         while (n > 0){ //numero digitado no console é maior que 0
+//              int l = n % 10; //% significa o modulo, no caso de 10, que na prática pega o ultimo numero digitado
 // // TODO: Crie as outras condições necessárias para a resolução do desafio:
-//              s += l; //somando os ultimos numeros
-//              p *= l;
-//                   ;
-//              n /=  10;
+//              s += l; //somando os ultimos numeros, armazenando o total da divisão
+//              p *= l; //multiplicando os ultimos numeros, armazenando o total da multiplicação               
+//              n /=  10; //faz a divisão de novo por 10, repetindo o while até que seja maior que 0
 //            }
 
-//            Console.WriteLine(p-s);
+//            Console.WriteLine(p-s);//difereça do total da multiplicação e total da soma
 //         }
 //     }
 
