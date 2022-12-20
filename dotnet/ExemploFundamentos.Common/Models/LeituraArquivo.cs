@@ -13,7 +13,7 @@ namespace ExemploFundamentos.Common.Models
             try
             {
                 //abrindo, lendo o arquivo e retornando uma matriz de string contendo todas as linhas do arquivo
-                string[] linhasRetornadas = File.ReadAllLines("arquivos/arquivoLeitura.txt");
+                string[] linhasRetornadas = File.ReadAllLines(caminhoArquivo);
                 return (true, linhasRetornadas, linhasRetornadas.Count());
                 
             }
