@@ -17,8 +17,17 @@ namespace ExemploFundamentos.Common.Models
         }
         public Pessoa(string nome, string sobreNome)
         {
+            //a ordem é o atribudo Nome recebe o parâmetro nome
             this.Nome = nome;
             this.sobreNome = sobreNome;
+        }
+        //descontruir ao que foi construido. 
+        public void Deconstruct(string nome, string sobreNome)
+        {
+            //a ordem inversa, ou seja a variavel nome recebe a propriedade (atributo) Nome
+            nome = this.Nome;
+            sobreNome = this.sobreNome;
+
         }
 
 
