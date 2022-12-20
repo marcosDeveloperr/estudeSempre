@@ -22,7 +22,8 @@ namespace ExemploFundamentos.Common.Models
             this.sobreNome = sobreNome;
         }
         //descontruir ao que foi construido. 
-        public void Deconstruct(string nome, string sobreNome)
+        //usar a palavra out antes do tipo do parâmetro. 
+        public void Deconstruct(out string nome, out string sobreNome)
         {
             //a ordem inversa, ou seja a variavel nome recebe a propriedade (atributo) Nome
             nome = this.Nome;
