@@ -3,68 +3,23 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using ExemploFundamentos.Common.Models;
-<<<<<<< HEAD
-// //Exceções e Coleções - Pilha (LIFO) - Primeiro (LI - last-in) que entra, último (FO - first-out) a sair. 
-// Stack<int> pilha = new Stack<int>(); //pilha do tipo inteiro.
 
-// //adicionar elementos na pilha
-// pilha.Push(100);//primeiro que entrou - last-in, porém ficou no final da pilha, ou seja último a sair
-// pilha.Push(200);
-// pilha.Push(300);
-// pilha.Push(400);
-// pilha.Push(500); //primeiro a sair, sempre removendo pelo topo da pilha.
+//Tupla
+LeituraArquivo arquivo = new LeituraArquivo();
+var (sucesso, linhasRetornadas, quantidadeLinha) = arquivo.LerAquivoTupla("arquivos/arquivoLeitura.txt");
 
-// //percorrer a pilha
-// foreach(int pilhas in pilha)
-// {
-//     Console.WriteLine(pilhas);
-// }
-
-
-// //remove o elemento do topo da pilha.
-// pilha.Pop();
-
-=======
-
-Dictionary<string, string> estados = new Dictionary<string,string>(); //chaves únicas com o valor que pode ser duplicado.
-estados.Add("SP", "São Paulo"); //adicionando chave e o valor
-estados.Add("BA", "Bahia");
-estados.Add("MG", "Minas Gerais");
-
-// foreach(var chavesDuplas in estados)
-// {
-//     Console.WriteLine($"Chave:  {chavesDuplas.Key}, Valor: {chavesDuplas.Value}");
-// }
-
-// Console.WriteLine("------Removendo item-------");
-// estados.Remove("MG");//removendo pela chave
-
-
-// Console.WriteLine("---------Valor alterado---------");
-// estados["SP"] = "São Paulo - valor alterado";
-
-// foreach(var chavesDuplas in estados)
-// {
-//     Console.WriteLine($"Chave:  {chavesDuplas.Key}, Valor: {chavesDuplas.Value}");
-// }
-
-
-//Buscando chave no Dictionary
-string chave = "SP";
-Console.WriteLine($"buscando chave: {chave}");
-if(estados.ContainsKey(chave))
+if(sucesso)
 {
-    Console.WriteLine($"chave existente: {chave}");
+    Console.WriteLine($"Quantidades de linhas do arquivo: " + quantidadeLinha);
+    foreach (var linhas in linhasRetornadas)
+    {
+        Console.WriteLine(linhas);
+    }
 }
 else
 {
-    Console.WriteLine($"chave inexistente: {chave}");
+    Console.WriteLine("Não foi possivel ler o arquivo");
 }
-
-
-
-
-
 
 
 
@@ -115,7 +70,6 @@ else
 // //remove o elemento do topo da pilha.
 // pilha.Pop();
 
->>>>>>> 57ebd3a80f97a55380f884f5bf75c29b50be4383
 // //percorrer a pilha
 // foreach(int pilhas in pilha)
 // {
