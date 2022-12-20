@@ -7,6 +7,8 @@ using ExemploFundamentos.Common.Models;
 //Tupla
 LeituraArquivo arquivo = new LeituraArquivo();
 var (sucesso, linhasRetornadas, quantidadeLinha) = arquivo.LerAquivoTupla("arquivos/arquivoLeitura.txt");
+//var (sucesso, linhasRetornadas, _) = arquivo.LerAquivoTupla("arquivos/arquivoLeitura.txt");
+//o underline no terceiro parametro informa que estou fazendo o descartes, não estou utilizando.
 
 if(sucesso)
 {
