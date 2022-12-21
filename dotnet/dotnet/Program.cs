@@ -9,7 +9,10 @@ using Newtonsoft.Json;
 Venda v1 = new Venda(1, "Material de Escritorio", 200.00M);
 
 //uma serialização do objeto para string json.
-string serializada = JsonConvert.SerializeObject(v1);
+//string serializada = JsonConvert.SerializeObject(v1);
+
+//Formatação 
+string serializada = JsonConvert.SerializeObject(v1, Formatting.Indented);
 
 //vendo a string serializada
 Console.WriteLine(serializada);
