@@ -5,14 +5,21 @@
 using ExemploFundamentos.Common.Models;
 using Newtonsoft.Json;
 
+
+List<Venda> listaVenda = new List<Venda>();
+
+
 //venda 
 Venda v1 = new Venda(1, "Material de Escritorio", 200.00M);
+Venda v2 = new Venda(2, "Licença de Software", 110.00M);
+listaVenda.Add(v1);
+listaVenda.Add(v2);
 
 //uma serialização do objeto para string json.
 //string serializada = JsonConvert.SerializeObject(v1);
 
 //Formatação 
-string serializada = JsonConvert.SerializeObject(v1, Formatting.Indented);
+string serializada = JsonConvert.SerializeObject(listaVenda, Formatting.Indented);
 
 //criando o arquivo com informações da string serializada
 File.WriteAllText("arquivos/venda.json", serializada);
