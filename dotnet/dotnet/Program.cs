@@ -3,16 +3,54 @@
 //Console.WriteLine("Testando o projeto console...");
 
 using ExemploFundamentos.Common.Models;
+using Newtonsoft.Json;
 
-//objeto do tipo Pessoa
-Pessoa p90 = new Pessoa("Marcos", "Figueiredo");
+//venda 
+Venda v1 = new Venda(1, "Material de Escritorio", 200.00M);
 
-//descontruindo.
-//a ordem desses parâmetros são os mesmo que estão no Descontruct da classe Pessoa
-(string nome, string sobreNome) = p90;
+//uma serialização do objeto para string json.
+string serializada = JsonConvert.SerializeObject(v1);
 
-//colocando as propriedade do objeto em variaveis
-Console.WriteLine($"{nome} {sobreNome}");
+//vendo a string serializada
+Console.WriteLine(serializada);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //objeto do tipo Pessoa
+// Pessoa p90 = new Pessoa("Marcos", "Figueiredo");
+
+// //descontruindo.
+// //a ordem desses parâmetros são os mesmo que estão no Descontruct da classe Pessoa
+// (string nome, string sobreNome) = p90;
+
+// //colocando as propriedade do objeto em variaveis
+// Console.WriteLine($"{nome} {sobreNome}");
 
 
 
