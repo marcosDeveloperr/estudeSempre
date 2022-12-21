@@ -5,27 +5,71 @@
 using ExemploFundamentos.Common.Models;
 using Newtonsoft.Json;
 
+//deserializando um objeto
 
-List<Venda> listaVenda = new List<Venda>();
+//lendo todo conteudo do arquvo venda.json 
+string conteudoArquivo = File.ReadAllText("arquivos/venda.json");
+
+//lista porque arquvo json vem vários objetos
+List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+foreach (Venda venda in listaVenda)
+{
+    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}" +
+                      $"Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+}
 
 
-//venda 
-Venda v1 = new Venda(1, "Material de Escritorio", 200.00M);
-Venda v2 = new Venda(2, "Licença de Software", 110.00M);
-listaVenda.Add(v1);
-listaVenda.Add(v2);
 
-//uma serialização do objeto para string json.
-//string serializada = JsonConvert.SerializeObject(v1);
 
-//Formatação 
-string serializada = JsonConvert.SerializeObject(listaVenda, Formatting.Indented);
 
-//criando o arquivo com informações da string serializada
-File.WriteAllText("arquivos/venda.json", serializada);
 
-//vendo a string serializada
-Console.WriteLine(serializada);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// DateTime dataAtual = DateTime.Now;
+
+// List<Venda> listaVenda = new List<Venda>();
+
+
+// //venda 
+//  Venda v1 = new Venda(1, "Material de Escritorio", 200.00M, dataAtual);
+//  Venda v2 = new Venda(2, "Licença de Software", 110.00M, dataAtual);
+// listaVenda.Add(v1);
+// listaVenda.Add(v2);
+
+// //uma serialização do objeto para string json.
+// //string serializada = JsonConvert.SerializeObject(v1);
+
+// //Formatação 
+// string serializada = JsonConvert.SerializeObject(listaVenda, Formatting.Indented);
+
+// //criando o arquivo com informações da string serializada
+//  File.WriteAllText("arquivos/venda.json", serializada);
+
+// //vendo a string serializada
+//  Console.WriteLine(serializada);
 
 
 
