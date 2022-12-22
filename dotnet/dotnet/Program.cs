@@ -5,19 +5,68 @@
 using ExemploFundamentos.Common.Models;
 using Newtonsoft.Json;
 
-//deserializando um objeto
+//Tipos especiais - valor null
 
-//lendo todo conteudo do arquvo venda.json 
-string conteudoArquivo = File.ReadAllText("arquivos/venda.json");
+//colocamos uma ? apos bool
+//nos casos de receber nulo - null
+//bool recebe verdadeiro ou falso, no caso recebe verdadeiro.
+//bool desejaReceberEmail = true;
 
-//lista porque arquvo json vem vários objetos
-List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
-
-foreach (Venda venda in listaVenda)
+bool? desejaReceberEmail = null; //receber null, significa ainda nao marcou essa opção
+//HasValue - Quero saber se term valor. .Value - acessa o valor
+if(desejaReceberEmail.HasValue && desejaReceberEmail.Value)
 {
-    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}" +
-                      $"Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+    Console.WriteLine("Optou em receber o email");
 }
+else
+{
+    Console.WriteLine("Optou não receber email ou não marcou a opção");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //deserializando um objeto
+
+// //lendo todo conteudo do arquvo venda.json 
+// string conteudoArquivo = File.ReadAllText("arquivos/venda.json");
+
+// //lista porque arquvo json vem vários objetos
+// List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+// foreach (Venda venda in listaVenda)
+// {
+//     Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}" +
+//                       $"Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+// }
 
 
 
