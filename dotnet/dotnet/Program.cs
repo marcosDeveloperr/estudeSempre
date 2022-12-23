@@ -6,8 +6,48 @@ using ExemploFundamentos.Common.Models;
 using Newtonsoft.Json;
 
 
-//Precisa atualizar a classe Venda
-//Adicionando "Desconto" no arquivo Json
+//dynamic - variavel que ao atribuir o valor assume o tipo da variavel.
+dynamic variavelDinamica = 4;
+
+Console.WriteLine($"Tipo da variavel: {variavelDinamica.GetType()} , Valor da Variavel: {variavelDinamica}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //não altera mais...
+// //tupla, porém somente para leitura. Uma vez declarada o valor
+// //representar diversos valores em uma única variavel como
+
+// //automaticamente reconhece o tipo da propriedade 
+// var tipoAnonimo = new { Nome = "Marcos", SobreNome = "Portugal", Altura = 1.85 };
+// Console.WriteLine($"Nome: {tipoAnonimo.Nome}");
+// Console.WriteLine($"Sobrenome: {tipoAnonimo.SobreNome}");
+// Console.WriteLine($"Altura: {tipoAnonimo.Altura}");
+
 
 
 
@@ -90,20 +130,20 @@ using Newtonsoft.Json;
 
 
 
-//deserializando um objeto
+// //deserializando um objeto
 
-//lendo todo conteudo do arquvo venda.json 
-string conteudoArquivo = File.ReadAllText("arquivos/venda.json");
+// //lendo todo conteudo do arquvo venda.json 
+// string conteudoArquivo = File.ReadAllText("arquivos/venda.json");
 
-//lista porque arquvo json vem vários objetos
-List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+// //lista porque arquvo json vem vários objetos
+// List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
 
-foreach (Venda venda in listaVenda)
-{
-    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}" +
-                      $"Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}" +
-                      $", Desconto: {venda.Desconto}");
- }
+// foreach (Venda venda in listaVenda)
+// {
+//     Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}" +
+//                       $"Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}" +
+//                       $", Desconto: {venda.Desconto}");
+//  }
 
 
 
