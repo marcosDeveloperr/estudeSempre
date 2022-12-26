@@ -5,11 +5,89 @@
 using ExemploFundamentos.Common.Models;
 using Newtonsoft.Json;
 
+int numero = 21;
+bool par = false;
+
+par = (numero % 2) == 0;
+
+
+string mensagem = $"O numero: {numero} é par {par}";
+Console.WriteLine(mensagem);
+
+If Ternário
+string mensagem = "O Numero: " + numero + " " + " é " + (par ? "par" : "ímpar");
+Console.WriteLine(mensagem);
+
+Evitar vamos fazer a EXTENSÃO DO MÉTODO na classe IntExtensions na pasta Models
+verificar se o numero é par ou não, entao vai ter que replicar várias partes o código 
+
+numero.EhPar();
+string mensagem = "O Numero: " + numero + " " + " é " + (par ? "par" : "ímpar");
+Console.WriteLine(mensagem);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //classe criada em ExemploFundamentos.Common/Modelos
+// //classe genérica - não específica o tipo de dados
+// MeuArray<int> arrayInteiro = new MeuArray<int>();
+// arrayInteiro.AdicionarElementoArray(30);
+// Console.WriteLine(arrayInteiro[0]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //dynamic - variavel que ao atribuir o valor assume o tipo da variavel.
-dynamic variavelDinamica = 4;
+// dynamic variavelDinamica = 4;
 
-Console.WriteLine($"Tipo da variavel: {variavelDinamica.GetType()} , Valor da Variavel: {variavelDinamica}");
+// Console.WriteLine($"Tipo da variavel: {variavelDinamica.GetType()} , Valor da Variavel: {variavelDinamica}");
 
 
 
