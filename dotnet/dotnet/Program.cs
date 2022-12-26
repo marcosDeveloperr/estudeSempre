@@ -8,18 +8,18 @@ using Newtonsoft.Json;
 int numero = 21;
 bool par = false;
 
-par = (numero % 2) == 0;
+// par = (numero % 2) == 0;
 
 
-string mensagem = $"O numero: {numero} é par {par}";
-Console.WriteLine(mensagem);
+// string mensagem = $"O numero: {numero} é par {par}";
+// Console.WriteLine(mensagem);
 
-If Ternário
-string mensagem = "O Numero: " + numero + " " + " é " + (par ? "par" : "ímpar");
-Console.WriteLine(mensagem);
+// If Ternário
+// string mensagem = "O Numero: " + numero + " " + " é " + (par ? "par" : "ímpar");
+// Console.WriteLine(mensagem);
 
-Evitar vamos fazer a EXTENSÃO DO MÉTODO na classe IntExtensions na pasta Models
-verificar se o numero é par ou não, entao vai ter que replicar várias partes o código 
+// Evitar vamos fazer a EXTENSÃO DO MÉTODO na classe IntExtensions na pasta Models
+// verificar se o numero é par ou não, entao vai ter que replicar várias partes o código 
 
 numero.EhPar();
 string mensagem = "O Numero: " + numero + " " + " é " + (par ? "par" : "ímpar");
