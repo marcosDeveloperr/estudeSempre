@@ -22,7 +22,21 @@ namespace ExemploFundamentos.Common.Models.ExemploPOO
         public void Sacar(decimal valor)
         {
             //saldo = saldo - valor;
-            saldo -= valor;
+            if(saldo >= valor)
+            {
+                 saldo -= valor;
+                Console.WriteLine($"Saque {valor} realizado com sucesso");
+            }
+            else
+            {
+                Console.WriteLine("valor a sacar maior que o saldo da conta");
+            }
+           
+        }
+
+        public void ExibirSaldo()
+        {
+            Console.WriteLine($"Seu saldo disponivel: {saldo}");
         }
     }
 }
