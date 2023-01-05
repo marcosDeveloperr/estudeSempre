@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {}
+    "C:\\Users\\windows\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\estudeSempre\\dotnet\\dotnet\\dotnet.csproj",
+      "projectUniqueName": "d:\\estudeSempre\\dotnet\\dotnet\\dotnet.csproj",
       "projectName": "dotnet",
-      "projectPath": "M:\\estudeSempre\\dotnet\\dotnet\\dotnet.csproj",
-      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "M:\\estudeSempre\\dotnet\\dotnet\\obj\\",
+      "projectPath": "d:\\estudeSempre\\dotnet\\dotnet\\dotnet.csproj",
+      "packagesPath": "C:\\Users\\windows\\.nuget\\packages\\",
+      "outputPath": "d:\\estudeSempre\\dotnet\\dotnet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\windows\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -51,8 +51,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "M:\\estudeSempre\\dotnet\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
-              "projectPath": "M:\\estudeSempre\\dotnet\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj"
+            "d:\\estudeSempre\\dotnet\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
+              "projectPath": "d:\\estudeSempre\\dotnet\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\estudeSempre\\dotnet\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {}
+    "d:\\estudeSempre\\dotnet\\ExemploPOO\\ExemploPOO.csproj": {}
   },
   "projects": {
-    "d:\\estudeSempre\\dotnet\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
+    "d:\\estudeSempre\\dotnet\\ExemploPOO\\ExemploPOO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\estudeSempre\\dotnet\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
-        "projectName": "ExemploFundamentos.Common",
-        "projectPath": "d:\\estudeSempre\\dotnet\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
+        "projectUniqueName": "d:\\estudeSempre\\dotnet\\ExemploPOO\\ExemploPOO.csproj",
+        "projectName": "ExemploPOO",
+        "projectPath": "d:\\estudeSempre\\dotnet\\ExemploPOO\\ExemploPOO.csproj",
         "packagesPath": "C:\\Users\\windows\\.nuget\\packages\\",
-        "outputPath": "d:\\estudeSempre\\dotnet\\ExemploFundamentos.Common\\obj\\",
+        "outputPath": "d:\\estudeSempre\\dotnet\\ExemploPOO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\windows\\AppData\\Roaming\\NuGet\\NuGet.Config"

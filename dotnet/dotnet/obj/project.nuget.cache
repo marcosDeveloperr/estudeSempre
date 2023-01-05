@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xG4f4wBEeb2RVwyLtyT+t09vvODa6NFh4cOUBhuSyQMKaCr2/nAufWZpWRPa4m/KSfscCH+NYLSXZz9ZI1YcNw==",
+  "dgSpecHash": "8mb8hN/YlVTdSg2QtxhqyuiPK7MWBIWHB2uJAvYSkUpYK+dWTtO0QDBDDgHIPkyhfbttr7+0F5lquDuSocn+sQ==",
   "success": true,
-  "projectFilePath": "M:\\estudeSempre\\dotnet\\dotnet\\dotnet.csproj",
+  "projectFilePath": "d:\\estudeSempre\\dotnet\\dotnet\\dotnet.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -31,3 +31,6 @@ M:\estudeSempre\dotnet\dotnet\obj\Debug\net6.0\ref\dotnet.dll
 M:\estudeSempre\dotnet\dotnet\bin\Debug\net6.0\ExemploFundamentos.Common.dll
 M:\estudeSempre\dotnet\dotnet\bin\Debug\net6.0\ExemploFundamentos.Common.pdb
 M:\estudeSempre\dotnet\dotnet\obj\Debug\net6.0\dotnet.csproj.CopyComplete
+d:\estudeSempre\dotnet\dotnet\obj\Debug\net6.0\dotnet.dll
+d:\estudeSempre\dotnet\dotnet\obj\Debug\net6.0\refint\dotnet.dll
+d:\estudeSempre\dotnet\dotnet\obj\Debug\net6.0\dotnet.pdb

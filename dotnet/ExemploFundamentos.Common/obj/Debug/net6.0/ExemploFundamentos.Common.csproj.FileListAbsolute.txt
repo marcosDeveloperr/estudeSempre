@@ -10,3 +10,11 @@ M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundame
 M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\refint\ExemploFundamentos.Common.dll
 M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.pdb
 M:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ref\ExemploFundamentos.Common.dll
+d:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.csproj.AssemblyReference.cache
+d:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.GeneratedMSBuildEditorConfig.editorconfig
+d:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.AssemblyInfoInputs.cache
+d:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.AssemblyInfo.cs
+d:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.csproj.CoreCompileInputs.cache
+d:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.dll
+d:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\refint\ExemploFundamentos.Common.dll
+d:\estudeSempre\dotnet\ExemploFundamentos.Common\obj\Debug\net6.0\ExemploFundamentos.Common.pdb
