@@ -12,6 +12,22 @@ c1.ExibirSaldo();
 
 
 
+//Polimorfismo - método Apresentar()
+Aluno a1 = new Aluno();
+a1.Nome = "Marcos";
+a1.Email = "emailTal@gmail.com";
+a1.Idade = 34;
+a1.Nota = 10; //exclusiva da classe aluno
+a1.Apresentar();
+
+Professor p1 = new Professor();
+p1.Nome = "Eduardo";
+p1.Idade = 30;
+p1.Salario = 1000;
+p1.Apresentar();
+
+
+
 
 
 
