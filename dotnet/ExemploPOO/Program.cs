@@ -5,9 +5,58 @@
 using ExemploFundamentos.Common.Models.ExemploPOO;
 
 
-Corrente corrente1 = new Corrente();
-corrente1.Creditar(500);
-corrente1.ExibirSaldo();
+//Porque a classe Pessoa tem um construtor com essa exigência.
+//Ao criar o objeto tem a exigência de colocar o parâmetro nome
+Pessoa p1 = new Pessoa("Francisco");
+
+
+//colocando um parâmetro nome
+//Aluno classe que herda de Pessoa tem essa exigência de criar um objeto 
+Aluno a1 = new Aluno("Antonia");
+a1.Apresentar();
+
+
+//agora podendo criar um objeto sem parâmetro.
+//colocando mais um construtor default nas classe aluno, pessoa e professor
+Professor prof = new Professor();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Corrente corrente1 = new Corrente();
+// corrente1.Creditar(500);
+// corrente1.ExibirSaldo();
 
 
 
