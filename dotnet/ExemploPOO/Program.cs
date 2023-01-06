@@ -4,27 +4,63 @@
 
 using ExemploFundamentos.Common.Models.ExemploPOO;
 
-ContaCorrente c1 = new ContaCorrente(123, 1000);
-//c1.saldo - erro porque saldo é privado
-c1.ExibirSaldo();
-c1.Sacar(500);
-c1.ExibirSaldo();
+
+Corrente corrente1 = new Corrente();
+corrente1.Creditar(500);
+corrente1.ExibirSaldo();
 
 
 
-//Polimorfismo - método Apresentar()
-Aluno a1 = new Aluno();
-a1.Nome = "Marcos";
-a1.Email = "emailTal@gmail.com";
-a1.Idade = 34;
-a1.Nota = 10; //exclusiva da classe aluno
-a1.Apresentar();
 
-Professor p1 = new Professor();
-p1.Nome = "Eduardo";
-p1.Idade = 30;
-p1.Salario = 1000;
-p1.Apresentar();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ContaCorrente c1 = new ContaCorrente(123, 1000);
+// //c1.saldo - erro porque saldo é privado
+// c1.ExibirSaldo();
+// c1.Sacar(500);
+// c1.ExibirSaldo();
+
+
+
+// //Polimorfismo - método Apresentar()
+// Aluno a1 = new Aluno();
+// a1.Nome = "Marcos";
+// a1.Email = "emailTal@gmail.com";
+// a1.Idade = 34;
+// a1.Nota = 10; //exclusiva da classe aluno
+// a1.Apresentar();
+
+// Professor p1 = new Professor();
+// p1.Nome = "Eduardo";
+// p1.Idade = 30;
+// p1.Salario = 1000;
+// p1.Apresentar();
 
 
 
