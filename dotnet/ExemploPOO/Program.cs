@@ -3,22 +3,70 @@
 
 
 using ExemploFundamentos.Common.Models.ExemploPOO;
+using ExemploFundamentos.Common.Models.ExemploPOO.Interfaces;
 
 
-//Porque a classe Pessoa tem um construtor com essa exigência.
-//Ao criar o objeto tem a exigência de colocar o parâmetro nome
-Pessoa p1 = new Pessoa("Francisco");
+//praticando interface
+
+//classe calculadora implementa todos os métodos da interface ICalculadora.
+//É contrato, deve ser implementada por classe.
+//interface não é instanciada
+// ICalculadora cal = new ICalculadora();
+
+ ICalculadora cal = new Calculadora();
+Console.WriteLine(cal.Multiplicar(3, 9));
 
 
-//colocando um parâmetro nome
-//Aluno classe que herda de Pessoa tem essa exigência de criar um objeto 
-Aluno a1 = new Aluno("Antonia");
-a1.Apresentar();
 
 
-//agora podendo criar um objeto sem parâmetro.
-//colocando mais um construtor default nas classe aluno, pessoa e professor
-Professor prof = new Professor();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //Porque a classe Pessoa tem um construtor com essa exigência.
+// //Ao criar o objeto tem a exigência de colocar o parâmetro nome
+// Pessoa p1 = new Pessoa("Francisco");
+
+
+// //colocando um parâmetro nome
+// //Aluno classe que herda de Pessoa tem essa exigência de criar um objeto 
+// Aluno a1 = new Aluno("Antonia");
+// a1.Apresentar();
+
+
+// //agora podendo criar um objeto sem parâmetro.
+// //colocando mais um construtor default nas classe aluno, pessoa e professor
+// Professor prof = new Professor();
 
 
 
