@@ -7,6 +7,13 @@ namespace ExemploFundamentos.Common.Models.ExemploPOO
 {
     public class Aluno : Pessoa //Aluno herdando de Pessoa - Herança
     {
+        //construtor default
+        public Aluno()
+        {
+            
+        }
+
+        public Aluno(string nome) : base(nome) { }
         public double Nota { get; set; }
 
         //que estar herdando.
@@ -14,7 +21,7 @@ namespace ExemploFundamentos.Common.Models.ExemploPOO
         //override  - sobrescreva -  o método Apresentar que recebeu
         public override void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome}, tenho {Idade} anos, e sou um aluno nota {Nota} ");
+            Console.WriteLine($"Olá, meu nome é {Nome}, tenho {Idade} anos, e sou um aluno nota {Nota}");
         }
     }
 }
