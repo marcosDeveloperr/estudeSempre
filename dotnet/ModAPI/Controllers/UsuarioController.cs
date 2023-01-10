@@ -10,7 +10,7 @@ namespace ModAPI.Controllers
     [Route("[controller]")]
     public class UsuarioController : ControllerBase
     {
-        [HttpGet("ObterDataHoraAtual")]
+        [HttpGet("ObterDataHoraAtual")] //disponibilizando .../ObterDataHoraAtual
         public IActionResult obterDataHora()
         {
             var obj = new
@@ -19,6 +19,12 @@ namespace ModAPI.Controllers
                 Hora = DateTime.Now.ToLongTimeString()
             };
             return Ok(obj);
+        }
+        [HttpGet("Apresentar/{nome}")]
+        public IActionResult Apresentar(string nome)
+        {
+            var mensagem = $"Olá {nome}, seja bem vindo.";
+            return Ok(new {mensagem});
         }
     }
 }
