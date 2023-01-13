@@ -19,6 +19,7 @@ namespace ModAPI.Context
 
         }
 
-        public DbSet<Contato> Contatos { get; set; }
+        //Criando o banco a tabela Contatos
+        public DbSet<Contato> Contatos { get; set; } 
     }
 }
