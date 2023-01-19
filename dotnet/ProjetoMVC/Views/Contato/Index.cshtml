@@ -1,4 +1,41 @@
-<div class="text-center">
-    <h1 class="display-4">Contato</h1>
-    <p>Página Contato</p>
-</div>
+@model IEnumerable<ProjetoMVC.Models.Contato>
+@{
+    ViewData["Title"] = "Listagem de Contatos";
+}
+
+<h2>Conttos</h2>
+<p><a asp-action="Criar">Novo Contato</a></p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model=>model.Id)</th>
+            <th>@Html.DisplayNameFor(model=>model.Nome)</th>
+            <th>@Html.DisplayNameFor(model=>model.Telefone)</th>
+            <th>@Html.DisplayNameFor(model=>model.Ativo)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model=>item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model=>item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(model=>item.Telefone)
+                </td>
+                <td>
+                    @Html.DisplayFor(model=>item.Ativo)
+                </td>
+                <td>
+                    <a asp-cation="Editar" asp-rout-id="item.Id">Editar</a>
+                    <a asp-cation="Detalhes" asp-rout-id="item.Id">Detalhesr</a>
+                    <a asp-cation="Deletar" asp-rout-id="item.Id">Deletar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
